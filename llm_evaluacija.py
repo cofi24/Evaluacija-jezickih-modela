@@ -22,7 +22,6 @@ load_dotenv()
 
 OPENAI_API_KEY    = os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-GEMINI_API_KEY    = os.getenv("GEMINI_API_KEY")
 MISTRAL_API_KEY   = os.getenv("MISTRAL_API_KEY")
 
 # ─── Podešavanja ─────────────────────────────────────────────────────────────
@@ -33,9 +32,8 @@ MAX_TOKENA     = 500   # maksimalna dužina odgovora
 
 # Koji modeli se testiraju (True/False za svaki)
 TESTIRAJ = {
-    "gpt4":    False,
-    "claude":  False,
-    "gemini":  False,
+    "gpt4":    True,
+    "claude":  True,
     "mistral": True,
 }
 
@@ -88,7 +86,7 @@ def pitaj_claude(pitanje: str) -> str:
         import anthropic
         client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-5",
             max_tokens=MAX_TOKENA,
             temperature=TEMPERATURA,
             system=(
@@ -104,35 +102,7 @@ def pitaj_claude(pitanje: str) -> str:
         return f"GREŠKA: {e}"
 
 
-def pitaj_gemini(pitanje: str, pokusaj: int = 0) -> str:
-    """Šalje pitanje Google Gemini modelu sa automatskim retry."""
-    try:
-        from google import genai
-        from google.genai import types
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=pitanje,
-            config=types.GenerateContentConfig(
-                system_instruction=(
-                    "Ti si asistent koji odgovara na pitanja na srpskom jeziku. "
-                    "Odgovori kratko i precizno. "
-                    "Ako nisi siguran ili pitanje nije smisleno, reci to jasno."
-                ),
-                temperature=TEMPERATURA,
-                max_output_tokens=MAX_TOKENA,
-            )
-        )
-        return response.text.strip()
-    except Exception as e:
-        greska = str(e)
-        if "429" in greska and pokusaj < 4:
-            cekanje = 30 * (pokusaj + 1)
-            log.warning(f"Gemini rate limit — cekam {cekanje}s (pokusaj {pokusaj+1}/4)...")
-            time.sleep(cekanje)
-            return pitaj_gemini(pitanje, pokusaj + 1)
-        log.error(f"Gemini greška: {e}")
-        return f"GREŠKA: {e}"
+
 def pitaj_mistral(pitanje: str, pokusaj: int = 0) -> str:
     """Šalje pitanje Mistral modelu via API sa automatskim retry."""
     try:
@@ -183,41 +153,41 @@ def pitaj_mistral(pitanje: str, pokusaj: int = 0) -> str:
 SHEET_CONFIG = {
     # Raspored Tacnost :
     # A=ID, B=Kategorija, C=Pitanje, D=Tacan odgovor, E=Izvor, F=Tezina,
-    # G=Odg.GPT, H=Odg.Claude, I=Odg.Gemini, J=Odg.Mistral, K=Tacno?, L=Napomena
+    # G=Odg.GPT, H=Odg.Claude,  J=Odg.Mistral, K=Tacno?, L=Napomena
     "Tačnost": {
         "pitanje_col": 3,
         "pocetak_reda": 3,
         "modeli": {
             "gpt4":    7,
             "claude":  8,
-            "gemini":  9,
-            "mistral": 10,
+           
+            "mistral": 9,
         }
     },
     # Raspored Halucinacije:
     # A=ID, B=Tip zamke, C=Pitanje, D=Ocekivano, E=Crvene zastavice,
-    # F=Odg.GPT, G=Odg.Claude, H=Odg.Gemini, I=Odg.Mistral
+    # F=Odg.GPT, G=Odg.Claude,  I=Odg.Mistral
     "Halucinacije": {
         "pitanje_col": 3,
         "pocetak_reda": 3,
         "modeli": {
             "gpt4":    6,
             "claude":  7,
-            "gemini":  8,
-            "mistral": 9,
+            
+            "mistral": 8,
         }
     },
     # Raspored Konzistentnost:
     # A=Grupa ID, B=Varijanta, C=Tip formulacije, D=Pitanje, E=Tacan odgovor,
-    # F=Odg.GPT, G=Odg.Claude, H=Odg.Gemini, I=Odg.Mistral
+    # F=Odg.GPT, H=Odg.Gemini, I=Odg.Mistral
     "Konzistentnost": {
         "pitanje_col": 4,
         "pocetak_reda": 3,
         "modeli": {
             "gpt4":    6,
             "claude":  7,
-            "gemini":  8,
-            "mistral": 9,
+           
+            "mistral": 8,
         }
     },
 }
@@ -226,14 +196,14 @@ SHEET_CONFIG = {
 MODEL_FUNKCIJE = {
     "gpt4":    pitaj_gpt4,
     "claude":  pitaj_claude,
-    "gemini":  pitaj_gemini,
+   
     "mistral": pitaj_mistral,
 }
 
 MODEL_NAZIVI = {
     "gpt4":    "GPT-4o",
     "claude":  "Claude Sonnet",
-    "gemini":  "Gemini 1.5 Pro",
+ 
     "mistral": "Mistral Large",
 }
 

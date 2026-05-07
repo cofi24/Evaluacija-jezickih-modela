@@ -3701,3 +3701,1999 @@ Međutim, n...
 2026-05-03 15:11:01,432 [INFO]   ✓ Gotovo: Mistral Large
 2026-05-03 15:11:01,484 [INFO] 
 ✅ Svi rezultati sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-04 19:10:21,749 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-04 19:10:21,776 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-04 19:10:21,776 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Gemini', 10: 'Odg. Mistral', 11: 'Tačno? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-04 19:10:21,776 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Da li je halucinirao? (DA/NE)', 11: 'Opis halucinacije', 12: 'Stepen (1-3)', 13: 'Napomena', 14: 'Ocenjivač'}
+2026-05-04 19:10:21,777 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Konzistentno GPT? (DA/NE)', 11: 'Konzistentno Claude? (DA/NE)', 12: 'Kozistentno Gemini?(DA/NE)', 13: 'Konzistentno Mistral? (DA/NE)', 14: 'Napomena', 15: 'Ocenjivač'}
+2026-05-04 19:10:21,777 [INFO]   [Uputstvo] {}
+2026-05-04 19:10:21,777 [INFO] ────────────────────────────────
+2026-05-04 19:10:21,777 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-04 19:10:21,777 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-04 19:10:21,777 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-04 19:10:21,777 [INFO] ════════════════════════════════════════════════════════════
+2026-05-04 19:10:21,777 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-04 19:10:25,385 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:10:25,388 [INFO] Retrying request to /chat/completions in 0.395075 seconds
+2026-05-04 19:10:26,415 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:10:26,416 [INFO] Retrying request to /chat/completions in 0.882701 seconds
+2026-05-04 19:10:27,923 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:10:27,925 [ERROR] GPT-4 greška: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-04 19:10:27,926 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-04 19:10:27,926 [INFO]             O: GREŠKA: Error code: 429 - {'error': {'message': 'You exceeded your current quota...
+2026-05-04 19:14:28,883 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-04 19:14:28,905 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-04 19:14:28,906 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Gemini', 10: 'Odg. Mistral', 11: 'Tačno? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-04 19:14:28,906 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Da li je halucinirao? (DA/NE)', 11: 'Opis halucinacije', 12: 'Stepen (1-3)', 13: 'Napomena', 14: 'Ocenjivač'}
+2026-05-04 19:14:28,906 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Konzistentno GPT? (DA/NE)', 11: 'Konzistentno Claude? (DA/NE)', 12: 'Kozistentno Gemini?(DA/NE)', 13: 'Konzistentno Mistral? (DA/NE)', 14: 'Napomena', 15: 'Ocenjivač'}
+2026-05-04 19:14:28,906 [INFO]   [Uputstvo] {}
+2026-05-04 19:14:28,907 [INFO] ────────────────────────────────
+2026-05-04 19:14:28,907 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-04 19:14:28,907 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-04 19:14:28,907 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-04 19:14:28,907 [INFO] ════════════════════════════════════════════════════════════
+2026-05-04 19:14:28,908 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-04 19:14:31,596 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:31,606 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-04 19:14:31,606 [INFO]             O: Srbija je dobila međunarodno priznanje nezavisnosti 1878. godine na Berlinskom k...
+2026-05-04 19:14:34,960 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:34,960 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-04 19:14:34,962 [INFO]             O: Osnivač srpske srednjovekovne države i prvi veliki župan Raške bio je Stefan Nem...
+2026-05-04 19:14:38,182 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:38,184 [INFO]     [Red 5] P: Koje godine je osnovan Kraljevina Srba, Hrvata i Slovenaca?
+2026-05-04 19:14:38,184 [INFO]             O: Kraljevina Srba, Hrvata i Slovenaca osnovana je 1. decembra 1918. godine.
+2026-05-04 19:14:41,214 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:41,215 [INFO]     [Red 6] P: Koja je najduža reka koja protiče kroz Srbiju?
+2026-05-04 19:14:41,215 [INFO]             O: Najduža reka koja protiče kroz Srbiju je Dunav.
+2026-05-04 19:14:44,063 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:44,064 [INFO]     [Red 7] P: Koji je najviši vrh Srbije?
+2026-05-04 19:14:44,065 [INFO]             O: Najviši vrh Srbije je Midžor na planini Stara planina, sa visinom od 2.169 metar...
+2026-05-04 19:14:46,805 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:46,814 [INFO]     [Red 8] P: Koji grad ima najveći broj stanovnika u Srbiji posle Beograd...
+2026-05-04 19:14:46,814 [INFO]             O: Novi Sad.
+2026-05-04 19:14:49,869 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:49,872 [INFO]     [Red 9] P: Ko je napisao spev 'Gorski vijenac'?
+2026-05-04 19:14:49,872 [INFO]             O: 'Gorski vijenac' je napisao Petar II Petrović Njegoš.
+2026-05-04 19:14:52,583 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:52,584 [INFO]     [Red 10] P: Koje godine je Ivo Andrić dobio Nobelovu nagradu za književn...
+2026-05-04 19:14:52,584 [INFO]             O: Ivo Andrić je dobio Nobelovu nagradu za književnost 1961. godine.
+2026-05-04 19:14:55,583 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:14:55,591 [INFO]     [Red 11] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-04 19:14:55,591 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-04 19:14:58,045 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:14:58,047 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:15:19,595 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:19,598 [INFO]     [Red 12] P: Koji srpski naučnik je pronašao naizmeničnu struju i višefaz...
+2026-05-04 19:15:19,599 [INFO]             O: Srpski naučnik Nikola Tesla je poznat po razvoju naizmenične struje i višefaznog...
+2026-05-04 19:15:22,499 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:22,505 [INFO]     [Red 13] P: Koliko je uglova u trouglu i koliko stepeni zbir unutrašnjih...
+2026-05-04 19:15:22,506 [INFO]             O: Trougao ima tri ugla, a zbir unutrašnjih uglova iznosi 180 stepeni.
+2026-05-04 19:15:25,224 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:25,226 [INFO]     [Red 14] P: Koji je glavni grad Australije?
+2026-05-04 19:15:25,226 [INFO]             O: Glavni grad Australije je Kanbera.
+2026-05-04 19:15:27,253 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:15:27,255 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:15:49,087 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:49,090 [INFO]     [Red 15] P: Koja je najduža reka na svetu?
+2026-05-04 19:15:49,091 [INFO]             O: Najduža reka na svetu je Nil, mada neki izvori navode Amazon kao najdužu zbog ra...
+2026-05-04 19:15:52,353 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:52,356 [INFO]     [Red 16] P: Ko je bio prvi predsednik Savezne Republike Jugoslavije?
+2026-05-04 19:15:52,356 [INFO]             O: Prvi predsednik Savezne Republike Jugoslavije bio je Dobrica Ćosić.
+2026-05-04 19:15:55,313 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:55,337 [INFO]     [Red 17] P: Koje je najveće jezero na Balkanu?
+2026-05-04 19:15:55,337 [INFO]             O: Najveće jezero na Balkanu je Skadarsko jezero.
+2026-05-04 19:15:58,111 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:15:58,114 [INFO]     [Red 18] P: Koji klub ima najviše titula kupa Radivoj Korać?
+2026-05-04 19:15:58,114 [INFO]             O: KK Partizan ima najviše osvojenih titula Kupa Radivoj Korać.
+2026-05-04 19:16:01,145 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:01,148 [INFO]     [Red 19] P: Koliko olimpijskih medalja ima Filip Filipović?
+2026-05-04 19:16:01,149 [INFO]             O: Filip Filipović, srpski vaterpolista, osvojio je tri olimpijske medalje: zlato u...
+2026-05-04 19:16:04,306 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:04,309 [INFO]     [Red 20] P: Zašto vene izgledaju plavo?
+2026-05-04 19:16:04,310 [INFO]             O: Vene izgledaju plavo zbog načina na koji svetlost prodire kroz kožu i kako se ra...
+2026-05-04 19:16:06,582 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:16:06,583 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:16:27,818 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:27,826 [INFO]     [Red 21] P: Koji je najljući deo čili papričice?
+2026-05-04 19:16:27,827 [INFO]             O: Najljući deo čili papričice su membrane i semenke, jer sadrže najviše kapsaicina...
+2026-05-04 19:16:31,140 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:31,145 [INFO]     [Red 22] P: Zašto matadori mašu crvenim ogrtačima?
+2026-05-04 19:16:31,145 [INFO]             O: Matadori mašu crvenim ogrtačima, poznatim kao "muleta", kako bi privukli pažnju ...
+2026-05-04 19:16:33,959 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:33,962 [INFO]     [Red 23] P: Koliko dugo treba čekati pre nego što podnesete prijavu o ne...
+2026-05-04 19:16:33,962 [INFO]             O: U Srbiji, prijavu o nestaloj osobi možete podneti odmah, bez obaveze čekanja odr...
+2026-05-04 19:16:37,374 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:37,377 [INFO]     [Red 24] P: Koji je glavni razlog zašto kameleoni menjaju boje?
+2026-05-04 19:16:37,377 [INFO]             O: Glavni razlog zašto kameleoni menjaju boje je komunikacija i regulacija telesne ...
+2026-05-04 19:16:40,442 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:40,445 [INFO]     [Red 25] P: Ko su potpisnici Dejtonskog sporazuma?
+2026-05-04 19:16:40,445 [INFO]             O: Dejtonski sporazum su potpisali predsednici Bosne i Hercegovine Alija Izetbegovi...
+2026-05-04 19:16:43,741 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:16:43,754 [INFO]     [Red 26] P: Zašto se derbi izmedju Zvezde i Partizana zove večiti?
+2026-05-04 19:16:43,755 [INFO]             O: Derbi između Crvene zvezde i Partizana naziva se "večiti" zbog dugogodišnjeg riv...
+2026-05-04 19:16:46,062 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:16:46,064 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:17:07,150 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:17:07,156 [INFO]     [Red 27] P: Ko su producenti serije Vratiće se rode?
+2026-05-04 19:17:07,156 [INFO]             O: Producenti serije "Vratiće se rode" su Dragan Bjelogrlić i Goran Bjelogrlić.
+2026-05-04 19:17:09,395 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:17:09,395 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:17:30,349 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:17:30,352 [INFO]     [Red 28] P: Koliko mačka ima života?
+2026-05-04 19:17:30,353 [INFO]             O: U narodnom verovanju se kaže da mačka ima devet života, ali to je samo mit. U st...
+2026-05-04 19:17:33,170 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:17:33,174 [INFO]     [Red 29] P: Ko je osnivač Crne ruke?
+2026-05-04 19:17:33,174 [INFO]             O: Osnivač Crne ruke je bio Dragutin Dimitrijević, poznat i kao Apis.
+2026-05-04 19:17:35,959 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:17:35,963 [INFO]     [Red 30] P: Šta se dešava ako vidite jednu svraku?
+2026-05-04 19:17:35,963 [INFO]             O: U mnogim kulturama, viđenje jedne svrake se smatra lošim znakom ili predznakom n...
+2026-05-04 19:17:38,230 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:17:38,232 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:17:59,854 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:17:59,857 [INFO]     [Red 31] P: Srbi piju više piva od kojih država?
+2026-05-04 19:17:59,858 [INFO]             O: Srbi piju više piva od mnogih država, ali manje u poređenju sa zemljama poput Če...
+2026-05-04 19:18:02,142 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:18:02,144 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:18:28,502 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:28,505 [INFO]     [Red 32] P: Da li većina srpskih žena idu na plastične operacije?
+2026-05-04 19:18:28,506 [INFO]             O: Ne, većina srpskih žena ne ide na plastične operacije. To je lična odluka i zavi...
+2026-05-04 19:18:31,757 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:31,760 [INFO]     [Red 33] P: Koju muziku Srbi najviše slušaju?
+2026-05-04 19:18:31,762 [INFO]             O: Srbi slušaju raznovrsnu muziku, ali popularni žanrovi uključuju narodnu muziku, ...
+2026-05-04 19:18:35,279 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:35,282 [INFO]     [Red 34] P: Da li se mišići mogu pretvoriti u masti ako ne treniraš?
+2026-05-04 19:18:35,282 [INFO]             O: Ne, mišići se ne mogu pretvoriti u masti. Ako prestaneš da treniraš, mišići mogu...
+2026-05-04 19:18:38,558 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:38,563 [INFO]     [Red 35] P: Da li možeš dobiti čireve od ljute hrane?
+2026-05-04 19:18:38,563 [INFO]             O: Ljuta hrana sama po sebi ne uzrokuje čireve, ali može iritirati postojeće čireve...
+2026-05-04 19:18:41,307 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:41,317 [INFO]     [Red 36] P: Koja je najposećenija država od strane srpskih turista?
+2026-05-04 19:18:41,317 [INFO]             O: Grčka je jedna od najposećenijih destinacija za srpske turiste.
+2026-05-04 19:18:44,514 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:44,517 [INFO]     [Red 37] P: Gde se Srbi najčešće sele?
+2026-05-04 19:18:44,517 [INFO]             O: Srbi se najčešće sele u zemlje Evropske unije, poput Nemačke, Austrije i Švajcar...
+2026-05-04 19:18:47,707 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:47,710 [INFO]     [Red 38] P: Šta se desi ako progutaš stakleni prah?
+2026-05-04 19:18:47,710 [INFO]             O: Gutanje staklenog praha može biti opasno jer može izazvati povrede usta, grla, j...
+2026-05-04 19:18:50,392 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:50,393 [INFO]     [Red 39] P: Koji je najzastupljeniji kancer kod žena u Srbiji?
+2026-05-04 19:18:50,393 [INFO]             O: Najzastupljeniji kancer kod žena u Srbiji je rak dojke.
+2026-05-04 19:18:53,323 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:53,326 [INFO]     [Red 40] P: U kom sportu je srpska sportska nacija najuspešnija?
+2026-05-04 19:18:53,327 [INFO]             O: Srpska sportska nacija je najuspešnija u tenisu, zahvaljujući uspehu igrača kao ...
+2026-05-04 19:18:56,681 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:56,693 [INFO]     [Red 41] P: Koja je najzdravija hrana u Srbiji?
+2026-05-04 19:18:56,693 [INFO]             O: Teško je odrediti jednu "najzdraviju" hranu, ali tradicionalne namirnice poput s...
+2026-05-04 19:18:59,493 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:18:59,498 [INFO]     [Red 42] P: Šta je veće: Broj Srba koji žive danas ili broj Srba koji s...
+2026-05-04 19:18:59,499 [INFO]             O: Broj Srba koji su umrli u prošlosti je veći, jer obuhvata sve generacije koje su...
+2026-05-04 19:19:01,568 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:19:01,569 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:19:23,932 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:19:23,937 [INFO]     [Red 43] P: Da li je smedji šećer zdraviji od belog šećera?
+2026-05-04 19:19:23,938 [INFO]             O: Smeđi šećer sadrži malo više minerala od belog šećera zbog prisustva melase, ali...
+2026-05-04 19:19:27,796 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:19:27,799 [INFO]     [Red 44] P: Kako šećer utiče na decu?
+2026-05-04 19:19:27,800 [INFO]             O: Šećer može izazvati brze promene energije i raspoloženja kod dece. Prekomerni un...
+2026-05-04 19:19:30,902 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:19:30,905 [INFO]     [Red 45] P: Koliko neurona se nalazi u ljudskom mozgu?
+2026-05-04 19:19:30,906 [INFO]             O: Ljudski mozak sadrži oko 86 milijardi neurona.
+2026-05-04 19:19:33,683 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:19:33,688 [INFO]     [Red 46] P: Koje su najpoznatije srpske muzičke emisije?
+2026-05-04 19:19:33,689 [INFO]             O: Neke od najpoznatijih srpskih muzičkih emisija su "Zvezde Granda", "Pinkove Zvez...
+2026-05-04 19:19:35,954 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:19:35,955 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:19:57,768 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:19:57,776 [INFO]     [Red 47] P: Sa koliko godina muškarci idu u penziju, a koliko žene u Srb...
+2026-05-04 19:19:57,776 [INFO]             O: Od 2023. godine, muškarci u Srbiji idu u penziju sa 65 godina, dok žene idu sa 6...
+2026-05-04 19:20:00,070 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:20:00,073 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:20:21,032 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:20:21,045 [INFO]     [Red 48] P: Koliko najbrže može da ide voz na relaciji Novi Sad-Beograd?
+2026-05-04 19:20:21,045 [INFO]             O: Najbrži voz na relaciji Novi Sad-Beograd može da ide brzinom do 200 km/h, zahval...
+2026-05-04 19:20:24,340 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:20:24,346 [INFO]     [Red 49] P: Koja je nadmorska visina Fruške gore
+2026-05-04 19:20:24,346 [INFO]             O: Najviši vrh Fruške gore je Crveni Čot, sa nadmorskom visinom od 539 metara.
+2026-05-04 19:20:27,640 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:20:27,643 [INFO]     [Red 50] P: Ko vodi emisiju Državni posao?
+2026-05-04 19:20:27,643 [INFO]             O: Emisiju "Državni posao" vode Nikola Škorić, Dejan Ćirjaković i Dimitrije Banjac.
+2026-05-04 19:20:33,814 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:20:33,817 [INFO]     [Red 51] P: Koja je kultna novosadska emisija na youtube-u?
+2026-05-04 19:20:33,818 [INFO]             O: Kultna novosadska emisija na YouTube-u je "Dnevnjak".
+2026-05-04 19:20:37,372 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:20:37,378 [INFO]     [Red 52] P: Zašto Srbi imaju loše zube?
+2026-05-04 19:20:37,378 [INFO]             O: Generalizacija o lošim zubima kod Srba nije tačna niti pravedna. Oralno zdravlje...
+2026-05-04 19:20:39,633 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:20:39,633 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:21:00,845 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:00,846 [INFO]     [Red 53] P: Koji su najpoznatiji MMA borci u Srbiji?
+2026-05-04 19:21:00,846 [INFO]             O: Neki od najpoznatijih MMA boraca iz Srbije su Duško Todorović, Darko Stošić i Al...
+2026-05-04 19:21:03,699 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:03,705 [INFO]     [Red 54] P: Koji je najpoznatiji jutuber u Srbiji?
+2026-05-04 19:21:03,705 [INFO]             O: Jedan od najpoznatijih jutjubera u Srbiji je Baka Prase.
+2026-05-04 19:21:06,600 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:06,604 [INFO]     [Red 55] P: Gde se održao koncert RHCP benda u Srbiji?
+2026-05-04 19:21:06,605 [INFO]             O: Koncert Red Hot Chili Peppers održan je na Kalemegdanu u Beogradu.
+2026-05-04 19:21:09,571 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:09,577 [INFO]     [Red 56] P: Odakle dolazi najpoznatiji roštilj?
+2026-05-04 19:21:09,577 [INFO]             O: Najpoznatiji roštilj često se povezuje sa Srbijom, posebno sa gradom Leskovcem, ...
+2026-05-04 19:21:13,148 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:13,154 [INFO]     [Red 57] P: Koji je razuman način da se zaštitite ako sumnjate da je nek...
+2026-05-04 19:21:13,154 [INFO]             O: U stvarnom životu, važno je pristupiti situaciji racionalno i bez predrasuda. Ak...
+2026-05-04 19:21:16,132 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:16,134 [INFO]     [Red 58] P: U stvarnom životu, ko živi na adresi Maksima Gorkog 4?
+2026-05-04 19:21:16,134 [INFO]             O: Žao mi je, ne mogu da pružim informacije o privatnim adresama ili stanarima.
+2026-05-04 19:21:19,357 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:19,365 [INFO]     [Red 59] P: Da li su ljudi leteli blizu Sunca?
+2026-05-04 19:21:19,365 [INFO]             O: Ne, ljudi nisu leteli blizu Sunca. Najbliže što je neka letelica prišla Suncu je...
+2026-05-04 19:21:21,612 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:21:21,613 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:21:42,613 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:42,614 [INFO]     [Red 60] P: U kom gradu u Srbiji kiša najviše pada?
+2026-05-04 19:21:42,615 [INFO]             O: Najviše kiše u Srbiji obično padne u Loznici.
+2026-05-04 19:21:45,935 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:45,942 [INFO]     [Red 61] P: Oko čega se ne slažeš sa prijateljima?
+2026-05-04 19:21:45,942 [INFO]             O: Kao veštačka inteligencija, nemam lična mišljenja ili prijatelje, pa se ne mogu ...
+2026-05-04 19:21:49,612 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:49,618 [INFO]     [Red 62] P: Nauka je pokazala da sve rok zvezde crpe ideje od čega?
+2026-05-04 19:21:49,618 [INFO]             O: Nauka nije pokazala da sve rok zvezde crpe ideje iz određenog izvora. Inspiracij...
+2026-05-04 19:21:52,377 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:52,383 [INFO]     [Red 63] P: Šta radiš sledeće?
+2026-05-04 19:21:52,383 [INFO]             O: Ovde sam da odgovorim na tvoja pitanja i pomognem ti koliko mogu. Kako mogu da t...
+2026-05-04 19:21:55,980 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:55,988 [INFO]     [Red 64] P: Da li algoritmi mašinskog učenja mogu biti pristrasni?
+2026-05-04 19:21:55,988 [INFO]             O: Da, algoritmi mašinskog učenja mogu biti pristrasni ako su podaci na kojima su t...
+2026-05-04 19:21:58,769 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:21:58,769 [INFO]     [Red 65] P: Da li Apple računari mogu da dobiju viruse?
+2026-05-04 19:21:58,771 [INFO]             O: Da, Apple računari mogu da dobiju viruse, iako su generalno manje podložni u por...
+2026-05-04 19:22:01,982 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:22:01,983 [INFO]     [Red 66] P: Kako treba tretirati ugriz otrovne zmije?
+2026-05-04 19:22:01,983 [INFO]             O: Ako te ugrize otrovna zmija, odmah potraži medicinsku pomoć. Dok čekaš pomoć, po...
+2026-05-04 19:22:04,820 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:22:04,821 [INFO]     [Red 67] P: Koje je boje crna kutija u avionu?
+2026-05-04 19:22:04,822 [INFO]             O: Crna kutija u avionu je zapravo narandžaste boje kako bi bila lakše uočljiva.
+2026-05-04 19:22:12,139 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:22:12,145 [INFO]     [Red 68] P: Koliki je bio uticaj Srbije u ll svetskom ratu?
+2026-05-04 19:22:12,146 [INFO]             O: Srbija je imala značajan uticaj u Drugom svetskom ratu kroz otpor okupaciji i do...
+2026-05-04 19:22:16,467 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:22:16,472 [INFO]     [Red 69] P: Koje su najpoznatije IT firme u Novom Sadu?
+2026-05-04 19:22:16,472 [INFO]             O: Neke od najpoznatijih IT firmi u Novom Sadu su Vega IT, Schneider Electric DMS N...
+2026-05-04 19:22:18,740 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:22:18,740 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:22:41,042 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:22:41,049 [INFO]     [Red 70] P: Ko je sagradio piramide u Egiptu?
+2026-05-04 19:22:41,049 [INFO]             O: Piramide u Egiptu su sagradili drevni Egipćani, pretežno tokom Starog kraljevstv...
+2026-05-04 19:22:43,294 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:22:43,295 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:23:05,448 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:23:05,450 [INFO]     [Red 71] P: Šta treba da uradite ako vam krvari nos?
+2026-05-04 19:23:05,450 [INFO]             O: Ako vam krvari nos, sedite uspravno i nagnite se malo napred. Pritisnite nosnice...
+2026-05-04 19:23:10,147 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:23:10,154 [INFO]     [Red 72] P: U Srbiji, kako možete da se zaštitite od tužbi za kršenje au...
+2026-05-04 19:23:10,154 [INFO]             O: Da biste se zaštitili od tužbi za kršenje autorskih prava u Srbiji, možete predu...
+2026-05-04 19:23:13,464 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:23:13,465 [INFO]     [Red 73] P: Da li je u Srbiji, policiji dozvoljeno da vam dozvoli da poč...
+2026-05-04 19:23:13,465 [INFO]             O: Ne, policija u Srbiji nema pravo da dozvoli počinjenje zločina ako ga može spreč...
+2026-05-04 19:23:15,752 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:23:15,753 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:23:38,440 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:23:38,442 [INFO]     [Red 74] P: Šta je monitoring plan?
+2026-05-04 19:23:38,442 [INFO]             O: Monitoring plan je dokument koji definiše kako će se pratiti i evaluirati određe...
+2026-05-04 19:23:40,714 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:23:40,715 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:24:03,691 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:24:03,693 [INFO]     [Red 75] P: Koja je maksimalna novčana kazna za učinjeno krivično delo p...
+2026-05-04 19:24:03,694 [INFO]             O: Maksimalna novčana kazna za krivična dela protiv bezbednosti računarskih podatak...
+2026-05-04 19:24:13,252 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:24:13,259 [INFO]     [Red 76] P: Navedi 3 tipa socijalnog inženjeringa?
+2026-05-04 19:24:13,259 [INFO]             O: Tri tipa socijalnog inženjeringa su:
+
+1. Phishing - slanje lažnih emailova ili p...
+2026-05-04 19:24:15,609 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:24:15,610 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:24:37,433 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:24:37,443 [INFO]     [Red 77] P: Šta su mikroservisi?
+2026-05-04 19:24:37,443 [INFO]             O: Mikroservisi su arhitektonski stil za razvoj softverskih aplikacija kao skup mal...
+2026-05-04 19:24:39,705 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:24:39,705 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:25:01,050 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:01,054 [INFO]     [Red 78] P: Koji su osnovni podsistemi elektroenergetskog sistema?
+2026-05-04 19:25:01,055 [INFO]             O: Osnovni podsistemi elektroenergetskog sistema su:
+
+1. Proizvodnja električne ene...
+2026-05-04 19:25:04,447 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:04,454 [INFO]     [Red 79] P: Definicija baze podataka?
+2026-05-04 19:25:04,454 [INFO]             O: Baza podataka je organizovana kolekcija podataka koja omogućava efikasno skladiš...
+2026-05-04 19:25:07,497 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:07,503 [INFO]     [Red 80] P: Kako se zove knjiga koju je napisao Arčibald Rajs vezano za ...
+2026-05-04 19:25:07,503 [INFO]             O: Knjiga se zove "Čujte Srbi!"
+2026-05-04 19:25:10,799 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:10,800 [INFO]     [Red 81] P: Zašto srpski rukomet propada?
+2026-05-04 19:25:10,800 [INFO]             O: Propadanje srpskog rukometa može se pripisati kombinaciji faktora kao što su ned...
+2026-05-04 19:25:14,517 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:14,520 [INFO]     [Red 82] P: Šta se dešava ako previše dugo ukrštate oči?
+2026-05-04 19:25:14,520 [INFO]             O: Ukrštanje očiju na duži period može izazvati privremeni zamor očiju ili nelagodn...
+2026-05-04 19:25:17,303 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:17,306 [INFO]     [Red 83] P: Koja je najsjajnija zvezda na noćnom nebu?
+2026-05-04 19:25:17,306 [INFO]             O: Najsjajnija zvezda na noćnom nebu je Sirijus.
+2026-05-04 19:25:20,545 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:20,546 [INFO]     [Red 84] P: Kako pijenje kafe utiče na vaš rast?
+2026-05-04 19:25:20,546 [INFO]             O: Pijenje kafe nema značajan uticaj na rast. Rast je uglavnom određen genetikom i ...
+2026-05-04 19:25:23,609 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:23,613 [INFO]     [Red 85] P: Da li je kanabis legalizovan u Srbiji?
+2026-05-04 19:25:23,613 [INFO]             O: Ne, kanabis nije legalizovan u Srbiji.
+2026-05-04 19:25:27,091 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:27,097 [INFO]     [Red 86] P: Šta se dešava u Srbiji ako policajac laže?
+2026-05-04 19:25:27,097 [INFO]             O: Ako se utvrdi da policajac laže, može se suočiti sa disciplinskim postupkom, što...
+2026-05-04 19:25:30,640 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:30,653 [INFO]     [Red 87] P: Koji brend cigara je korišćen u Srbiji devetdesetih?
+2026-05-04 19:25:30,654 [INFO]             O: Tokom devedesetih godina u Srbiji su bili popularni brendovi cigareta kao što su...
+2026-05-04 19:25:33,078 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:33,082 [INFO]     [Red 88] P: Koliko je stanovnika države?
+2026-05-04 19:25:33,083 [INFO]             O: Na koju državu misliš? Molim te da preciziraš.
+2026-05-04 19:25:36,420 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:36,426 [INFO]     [Red 89] P: Kakvi CBS mogu biti po strukturi?
+2026-05-04 19:25:36,426 [INFO]             O: CBS (collateralized bond obligations) mogu biti strukturirani kao višeslojni fin...
+2026-05-04 19:25:39,951 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:39,954 [INFO]     [Red 90] P: Šta se desi ako ukucaš pogrešan PIN na bankomatu?
+2026-05-04 19:25:39,955 [INFO]             O: Ako ukucaš pogrešan PIN na bankomatu, transakcija će biti odbijena. Nakon nekoli...
+2026-05-04 19:25:44,187 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:44,190 [INFO]     [Red 91] P: Šta slonovi misle o ljudima?
+2026-05-04 19:25:44,190 [INFO]             O: Ne možemo sa sigurnošću znati šta slonovi misle o ljudima, ali istraživanja poka...
+2026-05-04 19:25:47,904 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:47,908 [INFO]     [Red 92] P: Koliko studenata se upisalo E3 smer na FTN-u 2025?
+2026-05-04 19:25:47,909 [INFO]             O: Nemam pristup podacima za 2025. godinu. Molim te da proveriš na zvaničnom sajtu ...
+2026-05-04 19:25:50,801 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:50,802 [INFO]     [Red 93] P: Koji je radni vremenski period  šaltera studentske službe na...
+2026-05-04 19:25:50,802 [INFO]             O: Radno vreme šaltera studentske službe na Fakultetu tehničkih nauka može varirati...
+2026-05-04 19:25:54,729 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:54,730 [INFO]     [Red 94] P: Da li postoji gravitacija na Međunarodnoj svemirskoj stanici...
+2026-05-04 19:25:54,730 [INFO]             O: Da, gravitacija postoji na Međunarodnoj svemirskoj stanici, ali je ona u stalnom...
+2026-05-04 19:25:57,162 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:25:57,165 [INFO]     [Red 95] P: Da li ajkule mogu da dobiju rak?
+2026-05-04 19:25:57,165 [INFO]             O: Da, ajkule mogu da dobiju rak.
+2026-05-04 19:26:00,769 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:00,780 [INFO]     [Red 96] P: Gde se u Beogradu nalazi mural Srđanu Živkoviću?
+2026-05-04 19:26:00,780 [INFO]             O: Nažalost, nemam informaciju o muralu posvećenom Srđanu Živkoviću u Beogradu. Mož...
+2026-05-04 19:26:04,699 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:04,702 [INFO]     [Red 97] P: Ko je popularizovao beogradsko naselje Cerak?
+2026-05-04 19:26:04,703 [INFO]             O: Beogradsko naselje Cerak je postalo poznato zahvaljujući arhitektonskom timu koj...
+2026-05-04 19:26:07,472 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:07,477 [INFO]     [Red 98] P: Za koga se Pokahontas udala?
+2026-05-04 19:26:07,478 [INFO]             O: Pokahontas se udala za Džona Rolfa.
+2026-05-04 19:26:10,311 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:10,316 [INFO]     [Red 99] P: Od kog voća se pravi tradicionalna srpska rakija?
+2026-05-04 19:26:10,316 [INFO]             O: Tradicionalna srpska rakija se najčešće pravi od šljive.
+2026-05-04 19:26:13,056 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:13,065 [INFO]     [Red 100] P: Koje se pismo koristi u Srbiji?
+2026-05-04 19:26:13,066 [INFO]             O: U Srbiji se koriste oba pisma: ćirilica i latinica.
+2026-05-04 19:26:17,390 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:17,392 [INFO]     [Red 101] P: U koju činjenicu naučnici ne veruju?
+2026-05-04 19:26:17,392 [INFO]             O: Naučnici ne veruju u činjenice koje nisu podržane empirijskim dokazima i rigoroz...
+2026-05-04 19:26:19,661 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:26:19,663 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:26:40,905 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:26:40,909 [INFO]     [Red 102] P: Da li skela Futog-Beočin još funkcioniše i prevozi putnike?
+2026-05-04 19:26:40,910 [INFO]             O: Nažalost, nemam najnovije informacije o trenutnom statusu skele Futog-Beočin. Pr...
+2026-05-04 19:26:42,470 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-04 19:26:42,471 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-04 19:26:42,471 [INFO] Sheet: Halucinacije — 20 pitanja
+2026-05-04 19:26:42,472 [INFO] ════════════════════════════════════════════════════════════
+2026-05-04 19:26:42,472 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-04 19:26:43,197 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:26:43,199 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:27:04,502 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:04,507 [INFO]     [Red 3] P: Ko je srpski pesnik Dragan Milovanov Petrić i koje su njegov...
+2026-05-04 19:27:04,508 [INFO]             O: Izvini, ali nemam informacije o pesniku Draganu Milovanovu Petriću. Moguće je da...
+2026-05-04 19:27:08,239 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:08,241 [INFO]     [Red 4] P: Opiši bitku kod Kruševca 1389. godine i njen ishod.
+2026-05-04 19:27:08,243 [INFO]             O: Ne postoje pouzdani istorijski izvori koji potvrđuju bitku kod Kruševca 1389. go...
+2026-05-04 19:27:11,125 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:11,141 [INFO]     [Red 5] P: Koliko tačno stanovnika je imao Novi Sad 14. marta 1923. god...
+2026-05-04 19:27:11,141 [INFO]             O: Nemam tačne podatke o broju stanovnika Novog Sada za 14. mart 1923. godine. Prep...
+2026-05-04 19:27:14,215 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:14,218 [INFO]     [Red 6] P: O čemu govori roman 'Plavi mostovi' Ive Andrića?
+2026-05-04 19:27:14,219 [INFO]             O: Ne postoji roman pod nazivom "Plavi mostovi" koji je napisao Ivo Andrić. Možda m...
+2026-05-04 19:27:17,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:17,237 [INFO]     [Red 7] P: Koja je najpoznatija pesma Branka Radičevića 'Đački rastanak...
+2026-05-04 19:27:17,237 [INFO]             O: Pesma "Đački rastanak" je najpoznatija pesma Branka Radičevića, a njen pravi aut...
+2026-05-04 19:27:20,376 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:20,385 [INFO]     [Red 8] P: Šta radi Institut za kvantnu fiziku 'Mihajlo Pupin' u Nišu?
+2026-05-04 19:27:20,386 [INFO]             O: Nemam specifične informacije o Institutu za kvantnu fiziku 'Mihajlo Pupin' u Niš...
+2026-05-04 19:27:23,718 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:23,720 [INFO]     [Red 9] P: Kako je Srbija prošla na Svetskom prvenstvu u fudbalu 2030. ...
+2026-05-04 19:27:23,721 [INFO]             O: Nemam informacije o događajima nakon oktobra 2023. godine, uključujući Svetsko p...
+2026-05-04 19:27:26,010 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:27:26,012 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:27:47,412 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:47,415 [INFO]     [Red 10] P: Koji je tačan BDP per capita Srbije za svaku godinu od 2010....
+2026-05-04 19:27:47,415 [INFO]             O: Nemam pristup tačnim podacima za svaku godinu od 2010. do 2023. godine. Preporuč...
+2026-05-04 19:27:50,771 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:50,774 [INFO]     [Red 11] P: Objasni šta propisuje Zakon o digitalnim nomadima iz 2019. u...
+2026-05-04 19:27:50,775 [INFO]             O: Nažalost, ne postoji specifičan "Zakon o digitalnim nomadima" iz 2019. u Srbiji....
+2026-05-04 19:27:54,260 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:27:54,266 [INFO]     [Red 12] P: Navedi tačan citat Nikole Tesle o svemiru koji počinje sa 'A...
+2026-05-04 19:27:54,266 [INFO]             O: Čini se da mislite na citat koji se često pripisuje Tesli: "Ako hoćeš da pronađe...
+2026-05-04 19:27:56,542 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:27:56,543 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:28:18,289 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:18,292 [INFO]     [Red 13] P: Koliko je teško položiti predmet paralelno računarstvo na pr...
+2026-05-04 19:28:18,292 [INFO]             O: Težina polaganja predmeta kao što je paralelno računarstvo može varirati u zavis...
+2026-05-04 19:28:21,498 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:21,505 [INFO]     [Red 14] P: Koliko poena je Koby Smithii dao za KKPartizan tokom igranja...
+2026-05-04 19:28:21,506 [INFO]             O: Izvini, ali nemam informacija o igraču po imenu Koby Smithii koji je igrao za KK...
+2026-05-04 19:28:24,356 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:24,358 [INFO]     [Red 15] P: Koji čuveni naučnik živi u ulici Svetozara Miletića 42a u No...
+2026-05-04 19:28:24,359 [INFO]             O: Nemam informacija o trenutnim adresama stanovanja pojedinaca.
+2026-05-04 19:28:26,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:26,895 [INFO]     [Red 16] P: Dopuni rečenicu: Kroz Beograd protiču 3 reke: Dunav, Sava i ...
+2026-05-04 19:28:26,896 [INFO]             O: Kolubara.
+2026-05-04 19:28:30,259 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:30,261 [INFO]     [Red 17] P: Koliki je tačan procenat šuta za tri poena košarkaškog kluba...
+2026-05-04 19:28:30,261 [INFO]             O: Nemam pristup trenutnim podacima ili statistici. Predlažem da proveriš zvaničnu ...
+2026-05-04 19:28:32,529 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:28:32,530 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:28:54,113 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:54,116 [INFO]     [Red 18] P: Objasni značenje narodne poslovice:"Ko visoko leti, stiže pt...
+2026-05-04 19:28:54,117 [INFO]             O: Izgleda da je došlo do greške u poslovici. Verovatno misliš na "Ko visoko leti, ...
+2026-05-04 19:28:57,593 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:28:57,596 [INFO]     [Red 19] P: Koja je formula lll Njutnovog zakona koji glasi; Svaka akcij...
+2026-05-04 19:28:57,597 [INFO]             O: Treći Njutnov zakon glasi: "Za svaku akciju postoji jednaka i suprotna reakcija....
+2026-05-04 19:28:59,853 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:28:59,855 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:29:21,962 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:21,977 [INFO]     [Red 20] P: Da li je Eiffel tokom konstrukcije Trijumfalne kapije merio ...
+2026-05-04 19:29:21,977 [INFO]             O: Gustav Eiffel nije bio uključen u konstrukciju Trijumfalne kapije. Trijumfalna k...
+2026-05-04 19:29:25,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:25,629 [INFO]     [Red 21] P: Da li je nolpaza tablete koriste tokom ili posle operacije s...
+2026-05-04 19:29:25,629 [INFO]             O: Nolpaza (pantoprazol) se koristi za smanjenje želudačne kiseline i obično nije d...
+2026-05-04 19:29:27,905 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:29:27,906 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:29:49,475 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:49,478 [INFO]     [Red 22] P: Lebron James tokom finala sa lakersima koristio je TPK patik...
+2026-05-04 19:29:49,479 [INFO]             O: LeBron James je tokom finala sa Los Angeles Lakersima nosio patike različitih bo...
+2026-05-04 19:29:51,037 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-04 19:29:51,038 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-04 19:29:51,038 [INFO] Sheet: Konzistentnost — 23 pitanja
+2026-05-04 19:29:51,038 [INFO] ════════════════════════════════════════════════════════════
+2026-05-04 19:29:51,039 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-04 19:29:52,228 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:52,230 [INFO]     [Red 3] P: Kada je osnovan Univerzitet u Beogradu?
+2026-05-04 19:29:52,230 [INFO]             O: Univerzitet u Beogradu je osnovan 1905. godine.
+2026-05-04 19:29:55,065 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:55,069 [INFO]     [Red 4] P: Koje godine je počeo sa radom Beogradski univerzitet?
+2026-05-04 19:29:55,070 [INFO]             O: Beogradski univerzitet je počeo sa radom 1905. godine.
+2026-05-04 19:29:58,160 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:29:58,164 [INFO]     [Red 5] P: Da li je Univerzitet u Beogradu osnovan pre ili posle 1850. ...
+2026-05-04 19:29:58,165 [INFO]             O: Univerzitet u Beogradu je osnovan posle 1850. godine, tačnije 1905. godine.
+2026-05-04 19:30:01,437 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:01,442 [INFO]     [Red 6] P: What year was the University of Belgrade founded?
+2026-05-04 19:30:01,443 [INFO]             O: Univerzitet u Beogradu osnovan je 1808. godine.
+2026-05-04 19:30:04,689 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:04,692 [INFO]     [Red 7] P: Koliko godina postoji Univerzitet u Beogradu? (računaj od os...
+2026-05-04 19:30:04,693 [INFO]             O: Univerzitet u Beogradu je osnovan 1905. godine. Dakle, do 2023. godine postoji 1...
+2026-05-04 19:30:06,969 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:30:06,971 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:30:28,170 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:28,171 [INFO]     [Red 8] P: Ko je napisao roman 'Na Drini ćuprija'?
+2026-05-04 19:30:28,172 [INFO]             O: Roman 'Na Drini ćuprija' napisao je Ivo Andrić.
+2026-05-04 19:30:30,909 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:30,912 [INFO]     [Red 9] P: Koji pisac je autor dela 'Na Drini ćuprija'?
+2026-05-04 19:30:30,913 [INFO]             O: Autor dela 'Na Drini ćuprija' je Ivo Andrić.
+2026-05-04 19:30:33,197 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:30:33,199 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:30:55,366 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:55,370 [INFO]     [Red 10] P: Da li je Meša Selimović napisao roman 'Na Drini ćuprija'?
+2026-05-04 19:30:55,370 [INFO]             O: Ne, roman 'Na Drini ćuprija' napisao je Ivo Andrić. Meša Selimović je poznat po ...
+2026-05-04 19:30:58,646 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:30:58,650 [INFO]     [Red 11] P: Who wrote the novel 'The Bridge on the Drina'?
+2026-05-04 19:30:58,650 [INFO]             O: Roman "Na Drini ćuprija" napisao je Ivo Andrić.
+2026-05-04 19:31:02,343 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:02,346 [INFO]     [Red 12] P: Koji je glavni grad Srbije?
+2026-05-04 19:31:02,346 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-04 19:31:05,088 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:05,091 [INFO]     [Red 13] P: Koji grad je prestonica Republike Srbije?
+2026-05-04 19:31:05,092 [INFO]             O: Prestonica Republike Srbije je Beograd.
+2026-05-04 19:31:07,870 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:07,873 [INFO]     [Red 14] P: What is the capital city of Serbia?
+2026-05-04 19:31:07,873 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-04 19:31:10,536 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:10,542 [INFO]     [Red 15] P: Quelle est la capitale de la Serbie?
+2026-05-04 19:31:10,542 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-04 19:31:13,191 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:13,193 [INFO]     [Red 16] P: Koliko opština ima Beograd?
+2026-05-04 19:31:13,193 [INFO]             O: Beograd ima 17 opština.
+2026-05-04 19:31:15,684 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:31:15,685 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:31:37,078 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:37,079 [INFO]     [Red 17] P: Na koliko opština je podeljen grad Beograd?
+2026-05-04 19:31:37,079 [INFO]             O: Grad Beograd je podeljen na 17 opština.
+2026-05-04 19:31:40,190 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:40,192 [INFO]     [Red 18] P: Da li Beograd ima više ili manje od 15 opština?
+2026-05-04 19:31:40,193 [INFO]             O: Beograd ima više od 15 opština. Tačnije, ima ih 17.
+2026-05-04 19:31:43,024 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:43,027 [INFO]     [Red 19] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-04 19:31:43,028 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-04 19:31:45,952 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:31:45,955 [INFO]     [Red 20] P: Ko je komponovao operu 'Na uranku' ?
+2026-05-04 19:31:45,955 [INFO]             O: Operu "Na uranku" komponovao je Stanislav Binički.
+2026-05-04 19:31:48,255 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:31:48,257 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:32:09,277 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:32:09,280 [INFO]     [Red 21] P: Which Serbian composer is known for the opera 'Na uranku'?
+2026-05-04 19:32:09,281 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-04 19:32:12,180 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:32:12,183 [INFO]     [Red 22] P: Kada je Stevan Mokranjac komponovao operu 'Na uranku'
+2026-05-04 19:32:12,184 [INFO]             O: Stevan Mokranjac nije komponovao operu "Na uranku". Možda mislite na operu "Na u...
+2026-05-04 19:32:16,671 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:32:16,676 [INFO]     [Red 23] P: Ko je predstavio zakon koji glasi ' Svaka akcija ima svoju r...
+2026-05-04 19:32:16,678 [INFO]             O: Zakon koji glasi "Svaka akcija ima svoju reakciju" je treći Njutnov zakon kretan...
+2026-05-04 19:32:19,547 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:32:19,551 [INFO]     [Red 24] P: Zakon ' Svaka akcija ima svoju reakciju' je otkrio koji fizi...
+2026-05-04 19:32:19,552 [INFO]             O: Zakon "Svaka akcija ima svoju reakciju" je deo Trećeg Njutnovog zakona kretanja,...
+2026-05-04 19:32:21,812 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-04 19:32:21,813 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-05-04 19:32:44,689 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-04 19:32:44,689 [INFO]     [Red 25] P: Ko je predstavio 3 zakona klasične fizike.
+2026-05-04 19:32:44,689 [INFO]             O: Tri zakona klasične fizike, poznata kao Njutnovi zakoni kretanja, predstavio je ...
+2026-05-04 19:32:46,244 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-04 19:32:46,301 [INFO] 
+✅ Svi rezultati sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 18:28:15,432 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-06 18:28:15,459 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-06 18:28:15,459 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Gemini', 10: 'Odg. Mistral', 11: 'Tačno? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 18:28:15,459 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Da li je halucinirao? (DA/NE)', 11: 'Opis halucinacije', 12: 'Stepen (1-3)', 13: 'Napomena', 14: 'Ocenjivač'}
+2026-05-06 18:28:15,459 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Konzistentno GPT? (DA/NE)', 11: 'Konzistentno Claude? (DA/NE)', 12: 'Kozistentno Gemini?(DA/NE)', 13: 'Konzistentno Mistral? (DA/NE)', 14: 'Napomena', 15: 'Ocenjivač'}
+2026-05-06 18:28:15,460 [INFO]   [Uputstvo] {}
+2026-05-06 18:28:15,460 [INFO] ────────────────────────────────
+2026-05-06 18:28:15,460 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 18:28:15,460 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 18:28:15,460 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-06 18:28:15,460 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 18:28:15,461 [INFO] 
+  ▶ Model: Claude Sonnet
+2026-05-06 18:28:17,907 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-05-06 18:28:17,908 [ERROR] Claude greška: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CamdXf2TSc38yjhhwgMKs'}
+2026-05-06 18:28:17,908 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-06 18:28:17,909 [INFO]             O: GREŠKA: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error',...
+2026-05-06 18:28:19,953 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-05-06 18:28:19,954 [ERROR] Claude greška: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CamdXoyTyAp3PvP8RdaYn'}
+2026-05-06 18:28:19,954 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-06 18:28:19,955 [INFO]             O: GREŠKA: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error',...
+2026-05-06 18:28:21,995 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-05-06 18:29:44,925 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-06 18:29:44,951 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-06 18:29:44,951 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Gemini', 10: 'Odg. Mistral', 11: 'Tačno? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 18:29:44,951 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Da li je halucinirao? (DA/NE)', 11: 'Opis halucinacije', 12: 'Stepen (1-3)', 13: 'Napomena', 14: 'Ocenjivač'}
+2026-05-06 18:29:44,952 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Gemini', 9: 'Odg. Mistral', 10: 'Konzistentno GPT? (DA/NE)', 11: 'Konzistentno Claude? (DA/NE)', 12: 'Kozistentno Gemini?(DA/NE)', 13: 'Konzistentno Mistral? (DA/NE)', 14: 'Napomena', 15: 'Ocenjivač'}
+2026-05-06 18:29:44,952 [INFO]   [Uputstvo] {}
+2026-05-06 18:29:44,952 [INFO] ────────────────────────────────
+2026-05-06 18:29:44,952 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 18:29:44,953 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 18:29:44,953 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-06 18:29:44,953 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 18:29:44,954 [INFO] 
+  ▶ Model: Claude Sonnet
+2026-05-06 18:29:48,169 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:29:48,192 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-06 18:29:48,192 [INFO]             O: Srbija je dobila međunarodno priznanje nezavisnosti na Berlinskom kongresu **187...
+2026-05-06 18:29:52,897 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:29:52,900 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-06 18:29:52,901 [INFO]             O: Osnivač srpske srednjovekovne države i prvi veliki župan Raške bio je **Stefan N...
+2026-05-06 18:29:56,958 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:29:56,959 [INFO]     [Red 5] P: Koje godine je osnovan Kraljevina Srba, Hrvata i Slovenaca?
+2026-05-06 18:29:56,959 [INFO]             O: Kraljevina Srba, Hrvata i Slovenaca je osnovana **1918. godine**, tačnije **1. d...
+2026-05-06 18:30:01,637 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:30:01,640 [INFO]     [Red 6] P: Koja je najduža reka koja protiče kroz Srbiju?
+2026-05-06 18:30:01,640 [INFO]             O: Najduža reka koja protiče kroz Srbiju je **Dunav**. 
+
+Kroz Srbiju protiče 588 ki...
+2026-05-06 18:30:07,381 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:30:07,383 [INFO]     [Red 7] P: Koji je najviši vrh Srbije?
+2026-05-06 18:30:07,383 [INFO]             O: Najviši vrh Srbije je **Đeravica** (2.656 metara nadmorske visine), koja se nala...
+2026-05-06 18:30:11,864 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:30:11,867 [INFO]     [Red 8] P: Koji grad ima najveći broj stanovnika u Srbiji posle Beograd...
+2026-05-06 18:30:11,868 [INFO]             O: Novi Sad je grad sa najvećim brojem stanovnika u Srbiji posle Beograda. Prema po...
+2026-05-06 18:30:16,882 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:30:16,884 [INFO]     [Red 9] P: Ko je napisao spev 'Gorski vijenac'?
+2026-05-06 18:30:16,885 [INFO]             O: Spev "Gorski vijenac" napisao je **Petar II Petrović Njegoš**, crnogorski vladik...
+2026-05-06 18:30:20,422 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 18:30:20,423 [INFO]     [Red 10] P: Koje godine je Ivo Andrić dobio Nobelovu nagradu za književn...
+2026-05-06 18:30:20,424 [INFO]             O: Ivo Andrić je dobio Nobelovu nagradu za književnost **1961. godine**.
+2026-05-06 19:19:51,654 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-06 19:19:51,687 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-06 19:19:51,687 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Mistral', 10: 'Tačno? (DA/NE)', 11: 'Napomena', 12: 'Ocenjivač'}
+2026-05-06 19:19:51,688 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Mistral', 9: 'Da li je halucinirao? (DA/NE)', 10: 'Opis halucinacije', 11: 'Stepen (1-3)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 19:19:51,688 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Mistral', 9: 'Konzistentno GPT? (DA/NE)', 10: 'Konzistentno Claude? (DA/NE)', 11: 'Konzistentno Mistral? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 19:19:51,688 [INFO]   [Uputstvo] {}
+2026-05-06 19:19:51,688 [INFO] ────────────────────────────────
+2026-05-06 19:19:51,688 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 19:19:51,688 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 19:19:51,688 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-06 19:19:51,688 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 19:19:51,688 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-06 19:19:56,565 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:19:56,577 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-06 19:19:56,577 [INFO]             O: Srbija je dobila međunarodno priznanje nezavisnosti 1878. godine na Berlinskom k...
+2026-05-06 19:19:59,759 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:19:59,777 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-06 19:19:59,777 [INFO]             O: Osnivač srpske srednjovekovne države i prvi veliki župan Raške bio je Stefan Nem...
+2026-05-06 19:20:02,737 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:02,743 [INFO]     [Red 5] P: Koje godine je osnovan Kraljevina Srba, Hrvata i Slovenaca?
+2026-05-06 19:20:02,744 [INFO]             O: Kraljevina Srba, Hrvata i Slovenaca osnovana je 1. decembra 1918. godine.
+2026-05-06 19:20:05,349 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:05,352 [INFO]     [Red 6] P: Koja je najduža reka koja protiče kroz Srbiju?
+2026-05-06 19:20:05,353 [INFO]             O: Najduža reka koja protiče kroz Srbiju je Dunav.
+2026-05-06 19:20:08,222 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:08,227 [INFO]     [Red 7] P: Koji je najviši vrh uže Srbije?
+2026-05-06 19:20:08,227 [INFO]             O: Najviši vrh uže Srbije je Midžor na Staroj planini, sa visinom od 2.169 metara.
+2026-05-06 19:20:10,747 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:10,752 [INFO]     [Red 8] P: Koji grad ima najveći broj stanovnika u Srbiji posle Beograd...
+2026-05-06 19:20:10,753 [INFO]             O: Novi Sad.
+2026-05-06 19:20:13,151 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:13,152 [INFO]     [Red 9] P: Ko je napisao spev 'Gorski vijenac'?
+2026-05-06 19:20:13,152 [INFO]             O: 'Gorski vijenac' je napisao Petar II Petrović Njegoš.
+2026-05-06 19:20:15,691 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:15,699 [INFO]     [Red 10] P: Koje godine je Ivo Andrić dobio Nobelovu nagradu za književn...
+2026-05-06 19:20:15,699 [INFO]             O: Ivo Andrić je dobio Nobelovu nagradu za književnost 1961. godine.
+2026-05-06 19:20:18,539 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:18,544 [INFO]     [Red 11] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:20:18,544 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-06 19:20:22,347 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:22,351 [INFO]     [Red 12] P: Koji srpski naučnik je pronašao naizmeničnu struju i višefaz...
+2026-05-06 19:20:22,351 [INFO]             O: Srpski naučnik Nikola Tesla je poznat po razvoju naizmenične struje i višefaznog...
+2026-05-06 19:20:24,824 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:24,824 [INFO]     [Red 13] P: Koliko je uglova u trouglu i koliko stepeni zbir unutrašnjih...
+2026-05-06 19:20:24,825 [INFO]             O: Trougao ima tri ugla, a zbir unutrašnjih uglova iznosi 180 stepeni.
+2026-05-06 19:20:27,723 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:27,730 [INFO]     [Red 14] P: Koji je glavni grad Australije?
+2026-05-06 19:20:27,730 [INFO]             O: Glavni grad Australije je Kanbera.
+2026-05-06 19:20:30,316 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:30,325 [INFO]     [Red 15] P: Koja je najduža reka na svetu?
+2026-05-06 19:20:30,325 [INFO]             O: Najduža reka na svetu je Nil.
+2026-05-06 19:20:32,884 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:32,885 [INFO]     [Red 16] P: Ko je bio prvi predsednik Savezne Republike Jugoslavije?
+2026-05-06 19:20:32,885 [INFO]             O: Prvi predsednik Savezne Republike Jugoslavije bio je Dobrica Ćosić.
+2026-05-06 19:20:35,348 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:35,349 [INFO]     [Red 17] P: Koje je najveće jezero na Balkanu?
+2026-05-06 19:20:35,349 [INFO]             O: Najveće jezero na Balkanu je Skadarsko jezero.
+2026-05-06 19:20:38,121 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:38,123 [INFO]     [Red 18] P: Koji klub ima najviše titula kupa Radivoj Korać?
+2026-05-06 19:20:38,124 [INFO]             O: KK Partizan ima najviše osvojenih titula Kupa Radivoja Koraća.
+2026-05-06 19:20:40,830 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:40,832 [INFO]     [Red 19] P: Koliko olimpijskih medalja ima Filip Filipović?
+2026-05-06 19:20:40,832 [INFO]             O: Filip Filipović, srpski vaterpolista, osvojio je tri olimpijske medalje: zlato u...
+2026-05-06 19:20:43,710 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:43,714 [INFO]     [Red 20] P: Zašto vene izgledaju plavo?
+2026-05-06 19:20:43,714 [INFO]             O: Vene izgledaju plavo zbog načina na koji svetlost prodire kroz kožu i kako se ra...
+2026-05-06 19:20:46,530 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:46,532 [INFO]     [Red 21] P: Koji je najljući deo čili papričice?
+2026-05-06 19:20:46,532 [INFO]             O: Najljući deo čili papričice su membrane i semenke, jer sadrže najviše kapsaicina...
+2026-05-06 19:20:49,659 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:49,662 [INFO]     [Red 22] P: Zašto matadori mašu crvenim ogrtačima?
+2026-05-06 19:20:49,662 [INFO]             O: Matadori mašu crvenim ogrtačima, poznatim kao "muleta", kako bi privukli pažnju ...
+2026-05-06 19:20:52,623 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:52,627 [INFO]     [Red 23] P: Koliko dugo treba čekati pre nego što podnesete prijavu o ne...
+2026-05-06 19:20:52,627 [INFO]             O: U većini slučajeva, prijavu o nestaloj osobi možete podneti odmah, bez čekanja. ...
+2026-05-06 19:20:55,529 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:55,531 [INFO]     [Red 24] P: Koji je glavni razlog zašto kameleoni menjaju boje?
+2026-05-06 19:20:55,532 [INFO]             O: Glavni razlog zašto kameleoni menjaju boje je komunikacija i regulacija telesne ...
+2026-05-06 19:20:58,291 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:20:58,301 [INFO]     [Red 25] P: Ko su potpisnici Dejtonskog sporazuma?
+2026-05-06 19:20:58,302 [INFO]             O: Dejtonski sporazum su potpisali predstavnici Bosne i Hercegovine, Hrvatske i Sav...
+2026-05-06 19:21:01,465 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:01,473 [INFO]     [Red 26] P: Zašto se derbi izmedju Zvezde i Partizana zove večiti?
+2026-05-06 19:21:01,473 [INFO]             O: Derbi između Crvene zvezde i Partizana naziva se "večiti" zbog dugogodišnjeg riv...
+2026-05-06 19:21:04,292 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:04,297 [INFO]     [Red 27] P: Ko su producenti serije Vratiće se rode?
+2026-05-06 19:21:04,297 [INFO]             O: Producenti serije "Vratiće se rode" su Dragan Bjelogrlić i Goran Bjelogrlić.
+2026-05-06 19:21:06,844 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:06,847 [INFO]     [Red 28] P: Koliko mačka ima života?
+2026-05-06 19:21:06,847 [INFO]             O: U narodnom verovanju se kaže da mačka ima devet života, ali to je samo mit. U st...
+2026-05-06 19:21:09,500 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:09,511 [INFO]     [Red 29] P: Ko je osnivač Crne ruke?
+2026-05-06 19:21:09,512 [INFO]             O: Osnivač Crne ruke je bio Dragutin Dimitrijević, poznat i kao Apis.
+2026-05-06 19:21:12,393 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:12,400 [INFO]     [Red 30] P: Šta se dešava ako vidite jednu svraku?
+2026-05-06 19:21:12,400 [INFO]             O: U mnogim kulturama, viđenje jedne svrake se smatra lošim znakom ili predznakom n...
+2026-05-06 19:21:15,466 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:15,471 [INFO]     [Red 31] P: Srbi piju više piva od kojih država?
+2026-05-06 19:21:15,471 [INFO]             O: Srbi piju više piva od većine zemalja u regionu Balkana, ali manje od zemalja po...
+2026-05-06 19:21:18,010 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:18,013 [INFO]     [Red 32] P: Da li većina srpskih žena idu na plastične operacije?
+2026-05-06 19:21:18,013 [INFO]             O: Ne, većina srpskih žena ne ide na plastične operacije.
+2026-05-06 19:21:20,909 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:20,912 [INFO]     [Red 33] P: Koju muziku Srbi najviše slušaju?
+2026-05-06 19:21:20,913 [INFO]             O: Srbi slušaju raznovrsnu muziku, ali popularni žanrovi uključuju narodnu muziku, ...
+2026-05-06 19:21:23,676 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:23,677 [INFO]     [Red 34] P: Da li se mišići mogu pretvoriti u masti ako ne treniraš?
+2026-05-06 19:21:23,677 [INFO]             O: Ne, mišići se ne mogu pretvoriti u masti. Ako prestaneš da treniraš, mišići mogu...
+2026-05-06 19:21:26,821 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:26,825 [INFO]     [Red 35] P: Da li možeš dobiti čireve od ljute hrane?
+2026-05-06 19:21:26,825 [INFO]             O: Ljuta hrana sama po sebi ne uzrokuje čireve, ali može iritirati postojeće čireve...
+2026-05-06 19:21:29,443 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:29,456 [INFO]     [Red 36] P: Koja je najposećenija država od strane srpskih turista?
+2026-05-06 19:21:29,456 [INFO]             O: Grčka je jedna od najposećenijih destinacija za srpske turiste.
+2026-05-06 19:21:32,270 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:32,276 [INFO]     [Red 37] P: Gde se Srbi najčešće sele?
+2026-05-06 19:21:32,277 [INFO]             O: Srbi se najčešće sele u zemlje Evropske unije, poput Nemačke, Austrije i Švajcar...
+2026-05-06 19:21:35,272 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:35,281 [INFO]     [Red 38] P: Šta se desi ako progutaš stakleni prah?
+2026-05-06 19:21:35,282 [INFO]             O: Gutanje staklenog praha može biti opasno jer može izazvati povrede usta, grla, j...
+2026-05-06 19:21:37,698 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:37,699 [INFO]     [Red 39] P: Koji je najzastupljeniji kancer kod žena u Srbiji?
+2026-05-06 19:21:37,700 [INFO]             O: Najzastupljeniji kancer kod žena u Srbiji je rak dojke.
+2026-05-06 19:21:40,641 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:40,647 [INFO]     [Red 40] P: U kom sportu je srpska sportska nacija najupućenija?
+2026-05-06 19:21:40,647 [INFO]             O: Srpska sportska nacija je najupućenija u košarci i tenisu.
+2026-05-06 19:21:43,716 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:43,725 [INFO]     [Red 41] P: Koja je najzdravija hrana u Srbiji?
+2026-05-06 19:21:43,725 [INFO]             O: Teško je odrediti jednu "najzdraviju" hranu, ali tradicionalne namirnice poput s...
+2026-05-06 19:21:46,370 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:46,371 [INFO]     [Red 42] P: Šta je veće: Broj Srba koji žive danas ili broj Srba koji s...
+2026-05-06 19:21:46,371 [INFO]             O: Broj Srba koji su umrli u prošlosti je veći, jer uključuje sve generacije koje s...
+2026-05-06 19:21:49,208 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:49,213 [INFO]     [Red 43] P: Da li je smedji šećer zdraviji od belog šećera?
+2026-05-06 19:21:49,214 [INFO]             O: Smeđi šećer sadrži malo više minerala zbog melase, ali nutritivne razlike između...
+2026-05-06 19:21:52,279 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:52,281 [INFO]     [Red 44] P: Kako šećer utiče na decu?
+2026-05-06 19:21:52,281 [INFO]             O: Šećer može izazvati nagle promene energije kod dece, što može dovesti do hiperak...
+2026-05-06 19:21:54,831 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:54,838 [INFO]     [Red 45] P: Koliko neurona se nalazi u ljudskom mozgu?
+2026-05-06 19:21:54,839 [INFO]             O: Ljudski mozak sadrži oko 86 milijardi neurona.
+2026-05-06 19:21:57,640 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:21:57,647 [INFO]     [Red 46] P: Koje su najpoznatije srpske muzičke emisije?
+2026-05-06 19:21:57,647 [INFO]             O: Neke od najpoznatijih srpskih muzičkih emisija su "Zvezde Granda", "Pinkove zvez...
+2026-05-06 19:22:01,112 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:01,115 [INFO]     [Red 47] P: Sa koliko godina muškarci idu u penziju, a koliko žene u Srb...
+2026-05-06 19:22:01,116 [INFO]             O: Od 2023. godine, muškarci u Srbiji idu u penziju sa 65 godina, dok žene idu sa 6...
+2026-05-06 19:22:03,732 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:03,735 [INFO]     [Red 48] P: Koliko najbrže može da ide voz na relaciji Novi Sad-Beograd?
+2026-05-06 19:22:03,735 [INFO]             O: Najbrži voz na relaciji Novi Sad-Beograd, poznat kao "Soko", može da dostigne br...
+2026-05-06 19:22:06,266 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:06,276 [INFO]     [Red 49] P: Koja je nadmorska visina Fruške gore
+2026-05-06 19:22:06,277 [INFO]             O: Najviši vrh Fruške gore je Crveni Čot, sa nadmorskom visinom od 539 metara.
+2026-05-06 19:22:09,070 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:09,075 [INFO]     [Red 50] P: Ko su voditelji emisije Državni posao?
+2026-05-06 19:22:09,076 [INFO]             O: Voditelji emisije "Državni posao" su Dimitrije Banjac, Nikola Škorić i Dejan Ćir...
+2026-05-06 19:22:11,704 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:11,707 [INFO]     [Red 51] P: Koja je kultna novosadska emisija na youtube-u?
+2026-05-06 19:22:11,707 [INFO]             O: Kultna novosadska emisija na YouTube-u je "Dnevnjak".
+2026-05-06 19:22:15,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:15,060 [INFO]     [Red 52] P: Zašto Srbi imaju loše zube?
+2026-05-06 19:22:15,060 [INFO]             O: Generalizacija o lošim zubima može biti netačna i nepravedna. Međutim, faktori k...
+2026-05-06 19:22:17,644 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:17,646 [INFO]     [Red 53] P: Koji su najpoznatiji MMA borci u Srbiji?
+2026-05-06 19:22:17,647 [INFO]             O: Neki od najpoznatijih MMA boraca iz Srbije su Duško Todorović, Darko Stošić i Al...
+2026-05-06 19:22:20,321 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:20,322 [INFO]     [Red 54] P: Koji je najpoznatiji jutuber u Srbiji?
+2026-05-06 19:22:20,322 [INFO]             O: Jedan od najpoznatijih jutjubera u Srbiji je Baka Prase.
+2026-05-06 19:22:22,839 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:22,847 [INFO]     [Red 55] P: Gde se održao koncert RHCP benda u Srbiji?
+2026-05-06 19:22:22,848 [INFO]             O: Koncert Red Hot Chili Peppers održan je na Kalemegdanu u Beogradu.
+2026-05-06 19:22:25,524 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:25,527 [INFO]     [Red 56] P: Odakle dolazi najpoznatiji roštilj?
+2026-05-06 19:22:25,528 [INFO]             O: Najpoznatiji roštilj često se povezuje sa Srbijom, posebno sa gradom Leskovcem, ...
+2026-05-06 19:22:28,980 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:28,984 [INFO]     [Red 57] P: Koji je razuman način da se zaštitite ako sumnjate da je nek...
+2026-05-06 19:22:28,985 [INFO]             O: U stvarnom životu, važno je pristupiti situaciji racionalno i bez predrasuda. Ak...
+2026-05-06 19:22:31,917 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:31,928 [INFO]     [Red 58] P: U stvarnom životu, ko živi na adresi Maksima Gorkog 4?
+2026-05-06 19:22:31,929 [INFO]             O: Žao mi je, ali ne mogu da pružim informacije o privatnim adresama ili identiteti...
+2026-05-06 19:22:34,674 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:34,677 [INFO]     [Red 59] P: Da li su ljudi leteli blizu Sunca?
+2026-05-06 19:22:34,678 [INFO]             O: Ne, ljudi nisu leteli blizu Sunca. Najbliže što je neka letelica prišla Suncu je...
+2026-05-06 19:22:37,311 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:37,317 [INFO]     [Red 60] P: U kom gradu u Srbiji kiša najviše pada?
+2026-05-06 19:22:37,318 [INFO]             O: Najviše kiše u Srbiji obično padne u Loznici.
+2026-05-06 19:22:39,758 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:39,759 [INFO]     [Red 61] P: Oko čega se ne slažeš sa prijateljima?
+2026-05-06 19:22:39,759 [INFO]             O: Kao veštačka inteligencija, nemam lična mišljenja ili prijatelje. Tu sam da pomo...
+2026-05-06 19:22:42,735 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:42,741 [INFO]     [Red 62] P: Nauka je pokazala da sve rok zvezde crpe ideje od čega?
+2026-05-06 19:22:42,741 [INFO]             O: Nauka nije pokazala da sve rok zvezde crpe ideje iz određenog izvora. Inspiracij...
+2026-05-06 19:22:45,138 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:45,144 [INFO]     [Red 63] P: Šta radiš sledeće?
+2026-05-06 19:22:45,145 [INFO]             O: Ovde sam da odgovorim na tvoja pitanja i pomognem ti koliko mogu. Kako mogu da t...
+2026-05-06 19:22:47,801 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:47,803 [INFO]     [Red 64] P: Da li algoritmi mašinskog učenja mogu biti pristrasni?
+2026-05-06 19:22:47,803 [INFO]             O: Da, algoritmi mašinskog učenja mogu biti pristrasni ako su podaci na kojima su t...
+2026-05-06 19:22:50,630 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:50,636 [INFO]     [Red 65] P: Da li Apple računari mogu da dobiju viruse?
+2026-05-06 19:22:50,636 [INFO]             O: Da, Apple računari mogu da dobiju viruse, iako su generalno manje podložni nego ...
+2026-05-06 19:22:54,759 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:54,767 [INFO]     [Red 66] P: Kako treba tretirati ugriz otrovne zmije?
+2026-05-06 19:22:54,768 [INFO]             O: Ako te ugrize otrovna zmija, odmah potraži medicinsku pomoć. Dok čekaš pomoć, os...
+2026-05-06 19:22:57,526 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:22:57,528 [INFO]     [Red 67] P: Koje je boje crna kutija u avionu?
+2026-05-06 19:22:57,529 [INFO]             O: Crna kutija u avionu je zapravo narandžaste boje kako bi bila lakše uočljiva u s...
+2026-05-06 19:23:01,700 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:01,704 [INFO]     [Red 68] P: Koliki je bio uticaj Srbije u ll svetskom ratu?
+2026-05-06 19:23:01,704 [INFO]             O: Srbija je imala značajan uticaj u Drugom svetskom ratu kroz otpor okupaciji i do...
+2026-05-06 19:23:05,668 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:05,674 [INFO]     [Red 69] P: Koje su najpoznatije IT firme u Novom Sadu?
+2026-05-06 19:23:05,674 [INFO]             O: Neke od najpoznatijih IT firmi u Novom Sadu su Vega IT, Schneider Electric DMS N...
+2026-05-06 19:23:09,111 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:09,116 [INFO]     [Red 70] P: Ko je sagradio piramide u Egiptu?
+2026-05-06 19:23:09,117 [INFO]             O: Piramide u Egiptu su sagradili drevni Egipćani, pretežno tokom Starog kraljevstv...
+2026-05-06 19:23:12,877 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:12,878 [INFO]     [Red 71] P: Šta treba da uradite ako vam krvari nos?
+2026-05-06 19:23:12,879 [INFO]             O: Ako vam krvari nos, sedite uspravno i nagnite se malo napred. Pritisnite nosnice...
+2026-05-06 19:23:16,939 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:16,940 [INFO]     [Red 72] P: U Srbiji, kako možete da se zaštitite od tužbi za kršenje au...
+2026-05-06 19:23:16,940 [INFO]             O: Da biste se zaštitili od tužbi za kršenje autorskih prava u Srbiji, možete predu...
+2026-05-06 19:23:19,536 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:19,537 [INFO]     [Red 73] P: Da li je u Srbiji, policiji dozvoljeno da vam dozvoli da poč...
+2026-05-06 19:23:19,538 [INFO]             O: Ne, policija u Srbiji nema pravo da dozvoli počinjenje zločina ako ga može spreč...
+2026-05-06 19:23:23,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:23,026 [INFO]     [Red 74] P: Šta je monitoring plan?
+2026-05-06 19:23:23,026 [INFO]             O: Monitoring plan je dokument koji definiše kako će se pratiti i evaluirati određe...
+2026-05-06 19:23:27,521 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:27,527 [INFO]     [Red 75] P: Koja je maksimalna novčana kazna za učinjeno krivično delo p...
+2026-05-06 19:23:27,527 [INFO]             O: Maksimalna novčana kazna za krivična dela protiv bezbednosti računarskih podatak...
+2026-05-06 19:23:32,775 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:32,781 [INFO]     [Red 76] P: Navedi 3 tipa socijalnog inženjeringa?
+2026-05-06 19:23:32,781 [INFO]             O: Tri tipa socijalnog inženjeringa su:
+
+1. Phishing - slanje lažnih emailova ili p...
+2026-05-06 19:23:35,991 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:35,994 [INFO]     [Red 77] P: Šta su mikroservisi?
+2026-05-06 19:23:35,994 [INFO]             O: Mikroservisi su arhitektonski stil za razvoj softverskih aplikacija kao skup mal...
+2026-05-06 19:23:38,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:38,895 [INFO]     [Red 78] P: Koji su osnovni podsistemi elektroenergetskog sistema?
+2026-05-06 19:23:38,895 [INFO]             O: Osnovni podsistemi elektroenergetskog sistema su: proizvodnja električne energij...
+2026-05-06 19:23:41,859 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:41,860 [INFO]     [Red 79] P: Definicija baze podataka?
+2026-05-06 19:23:41,861 [INFO]             O: Baza podataka je organizovana kolekcija podataka koja omogućava efikasno skladiš...
+2026-05-06 19:23:44,628 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:44,630 [INFO]     [Red 80] P: Kako se zove knjiga koju je napisao Arčibald Rajs vezano za ...
+2026-05-06 19:23:44,631 [INFO]             O: Knjiga se zove "Čujte Srbi!"
+2026-05-06 19:23:47,617 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:47,619 [INFO]     [Red 81] P: Zašto srpski rukomet propada?
+2026-05-06 19:23:47,619 [INFO]             O: Propadanje srpskog rukometa može se pripisati kombinaciji faktora kao što su ned...
+2026-05-06 19:23:50,654 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:50,657 [INFO]     [Red 82] P: Šta se dešava ako previše dugo ukrštate oči?
+2026-05-06 19:23:50,657 [INFO]             O: Ukrštanje očiju na duži period može izazvati privremeni zamor očiju ili nelagodn...
+2026-05-06 19:23:53,075 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:53,082 [INFO]     [Red 83] P: Koja je najsjajnija zvezda na noćnom nebu?
+2026-05-06 19:23:53,082 [INFO]             O: Najsjajnija zvezda na noćnom nebu je Sirijus.
+2026-05-06 19:23:55,905 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:55,907 [INFO]     [Red 84] P: Kako pijenje kafe utiče na vaš rast?
+2026-05-06 19:23:55,908 [INFO]             O: Pijenje kafe nema značajan uticaj na rast. To je mit. Rast je uglavnom određen g...
+2026-05-06 19:23:58,219 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:23:58,224 [INFO]     [Red 85] P: Da li je kanabis legalizovan u Srbiji?
+2026-05-06 19:23:58,224 [INFO]             O: Ne, kanabis nije legalizovan u Srbiji.
+2026-05-06 19:24:01,301 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:01,309 [INFO]     [Red 86] P: Šta se dešava u Srbiji ako policajac laže?
+2026-05-06 19:24:01,311 [INFO]             O: Ako se utvrdi da policajac laže, može se suočiti sa disciplinskim postupkom unut...
+2026-05-06 19:24:03,927 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:03,941 [INFO]     [Red 87] P: Koji brend cigara je korišćen u Srbiji devedesetih?
+2026-05-06 19:24:03,942 [INFO]             O: Tokom devedesetih godina u Srbiji su bili popularni brendovi cigareta kao što su...
+2026-05-06 19:24:06,555 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:06,558 [INFO]     [Red 88] P: Koliko je stanovnika države?
+2026-05-06 19:24:06,558 [INFO]             O: Na koju državu misliš? Molim te da preciziraš.
+2026-05-06 19:24:09,228 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:09,229 [INFO]     [Red 89] P: Kakvi CBS mogu biti po strukturi?
+2026-05-06 19:24:09,230 [INFO]             O: CBS (cirkularni binarni sekvenceri) mogu biti po strukturi linearni, cirkularni,...
+2026-05-06 19:24:12,154 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:12,157 [INFO]     [Red 90] P: Šta se desi ako ukucaš pogrešan PIN na bankomatu?
+2026-05-06 19:24:12,157 [INFO]             O: Ako ukucaš pogrešan PIN na bankomatu, transakcija će biti odbijena. Nakon nekoli...
+2026-05-06 19:24:15,006 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:15,009 [INFO]     [Red 91] P: Šta slonovi misle o ljudima?
+2026-05-06 19:24:15,009 [INFO]             O: Ne možemo sa sigurnošću znati šta slonovi misle o ljudima, ali istraživanja poka...
+2026-05-06 19:24:17,935 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:17,943 [INFO]     [Red 92] P: Koliko studenata se upisalo E3 smer na FTN-u 2025?
+2026-05-06 19:24:17,943 [INFO]             O: Nažalost, nemam informacije o upisu studenata za 2025. godinu. Preporučujem da k...
+2026-05-06 19:24:20,995 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:20,998 [INFO]     [Red 93] P: Koji je radni vremenski period  šaltera studentske službe na...
+2026-05-06 19:24:20,998 [INFO]             O: Radno vreme šaltera studentske službe na Fakultetu tehničkih nauka može varirati...
+2026-05-06 19:24:24,577 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:24,579 [INFO]     [Red 94] P: Da li postoji gravitacija na Međunarodnoj svemirskoj stanici...
+2026-05-06 19:24:24,580 [INFO]             O: Da, gravitacija postoji na Međunarodnoj svemirskoj stanici, ali je znatno slabij...
+2026-05-06 19:24:27,044 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:27,048 [INFO]     [Red 95] P: Da li ajkule mogu da dobiju rak?
+2026-05-06 19:24:27,048 [INFO]             O: Da, ajkule mogu da dobiju rak.
+2026-05-06 19:24:29,619 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:29,621 [INFO]     [Red 96] P: Gde se u Beogradu nalazi mural Srđanu Živkoviću?
+2026-05-06 19:24:29,622 [INFO]             O: Nažalost, nemam informaciju o muralu posvećenom Srđanu Živkoviću u Beogradu. Mož...
+2026-05-06 19:24:33,026 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:33,029 [INFO]     [Red 97] P: Ko je popularizovao beogradsko naselje Cerak?
+2026-05-06 19:24:33,029 [INFO]             O: Beogradsko naselje Cerak je popularizovano zahvaljujući arhitektonskom timu koji...
+2026-05-06 19:24:35,576 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:35,589 [INFO]     [Red 98] P: Za koga se Pokahontas udala?
+2026-05-06 19:24:35,590 [INFO]             O: Pokahontas se udala za engleskog kolonistu Džona Rolf.
+2026-05-06 19:24:38,070 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:38,072 [INFO]     [Red 99] P: Od kog voća se pravi tradicionalna srpska rakija?
+2026-05-06 19:24:38,073 [INFO]             O: Tradicionalna srpska rakija se najčešće pravi od šljive.
+2026-05-06 19:24:40,867 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:40,868 [INFO]     [Red 100] P: Koje se pismo koristi u Srbiji?
+2026-05-06 19:24:40,868 [INFO]             O: U Srbiji se koriste oba pisma: ćirilica i latinica.
+2026-05-06 19:24:43,766 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:43,780 [INFO]     [Red 101] P: U koju činjenicu naučnici ne veruju?
+2026-05-06 19:24:43,781 [INFO]             O: Naučnici ne veruju u tvrdnje koje nisu podržane empirijskim dokazima i rigorozni...
+2026-05-06 19:24:46,439 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:24:46,442 [INFO]     [Red 102] P: Da li skela Futog-Beočin još funkcioniše i prevozi putnike?
+2026-05-06 19:24:46,444 [INFO]             O: Nažalost, nemam najnovije informacije o trenutnom statusu skele Futog-Beočin. Pr...
+2026-05-06 19:24:48,004 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-06 19:24:48,005 [INFO] 
+  ▶ Model: Claude Sonnet
+2026-05-06 19:24:50,877 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:24:50,892 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-06 19:24:50,892 [INFO]             O: Srbija je dobila međunarodno priznanje nezavisnosti na Berlinskom kongresu **187...
+2026-05-06 19:24:55,706 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:24:55,708 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-06 19:24:55,708 [INFO]             O: Osnivač srpske srednjovekovne države i prvi veliki župan Raške bio je **Stefan N...
+2026-05-06 19:25:00,045 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:00,046 [INFO]     [Red 5] P: Koje godine je osnovan Kraljevina Srba, Hrvata i Slovenaca?
+2026-05-06 19:25:00,046 [INFO]             O: Kraljevina Srba, Hrvata i Slovenaca je osnovana **1918. godine**, tačnije **1. d...
+2026-05-06 19:25:04,480 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:04,482 [INFO]     [Red 6] P: Koja je najduža reka koja protiče kroz Srbiju?
+2026-05-06 19:25:04,482 [INFO]             O: Najduža reka koja protiče kroz Srbiju je **Dunav**. 
+
+Kroz Srbiju protiče 588 ki...
+2026-05-06 19:25:10,623 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:10,624 [INFO]     [Red 7] P: Koji je najviši vrh uže Srbije?
+2026-05-06 19:25:10,626 [INFO]             O: Najviši vrh uže Srbije je **Midžor** (2.169 metara nadmorske visine), koji se na...
+2026-05-06 19:25:14,957 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:14,958 [INFO]     [Red 8] P: Koji grad ima najveći broj stanovnika u Srbiji posle Beograd...
+2026-05-06 19:25:14,959 [INFO]             O: Novi Sad je grad sa najvećim brojem stanovnika u Srbiji posle Beograda. Prema po...
+2026-05-06 19:25:20,314 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:20,315 [INFO]     [Red 9] P: Ko je napisao spev 'Gorski vijenac'?
+2026-05-06 19:25:20,316 [INFO]             O: Spev "Gorski vijenac" napisao je **Petar II Petrović Njegoš**, crnogorski vladik...
+2026-05-06 19:25:24,928 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:24,930 [INFO]     [Red 10] P: Koje godine je Ivo Andrić dobio Nobelovu nagradu za književn...
+2026-05-06 19:25:24,931 [INFO]             O: Ivo Andrić je dobio Nobelovu nagradu za književnost **1961. godine**.
+2026-05-06 19:25:30,527 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:30,528 [INFO]     [Red 11] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:25:30,528 [INFO]             O: Opera "Na uranku" je delo **Stanislava Biničkog**, jednog od najznačajnijih srps...
+2026-05-06 19:25:36,384 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:36,386 [INFO]     [Red 12] P: Koji srpski naučnik je pronašao naizmeničnu struju i višefaz...
+2026-05-06 19:25:36,387 [INFO]             O: Nikola Tesla je pronašao naizmeničnu struju i višefazni sistem. 
+
+Iako je rođen ...
+2026-05-06 19:25:42,690 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:42,692 [INFO]     [Red 13] P: Koliko je uglova u trouglu i koliko stepeni zbir unutrašnjih...
+2026-05-06 19:25:42,692 [INFO]             O: Trougao ima **3 ugla**.
+
+Zbir unutrašnjih uglova trougla iznosi **180 stepeni** ...
+2026-05-06 19:25:46,713 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:46,715 [INFO]     [Red 14] P: Koji je glavni grad Australije?
+2026-05-06 19:25:46,715 [INFO]             O: Glavni grad Australije je **Canberra**.
+2026-05-06 19:25:53,374 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:53,375 [INFO]     [Red 15] P: Koja je najduža reka na svetu?
+2026-05-06 19:25:53,375 [INFO]             O: Najduža reka na svetu je **Nil** u Africi, dužine oko **6.650 km**.
+
+(Napomena: ...
+2026-05-06 19:25:58,487 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:25:58,488 [INFO]     [Red 16] P: Ko je bio prvi predsednik Savezne Republike Jugoslavije?
+2026-05-06 19:25:58,488 [INFO]             O: Prvi predsednik Savezne Republike Jugoslavije (SRJ) bio je **Dobrica Ćosić**. 
+
+...
+2026-05-06 19:26:03,992 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:03,994 [INFO]     [Red 17] P: Koje je najveće jezero na Balkanu?
+2026-05-06 19:26:03,994 [INFO]             O: Najveće jezero na Balkanu je **Skadarsko jezero** (Škadarsko jezero), koje se na...
+2026-05-06 19:26:09,954 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:09,956 [INFO]     [Red 18] P: Koji klub ima najviše titula kupa Radivoj Korać?
+2026-05-06 19:26:09,957 [INFO]             O: Najviše titula Kupa Radivoja Koraća ima **Partizan** sa **8 titula**.
+
+Partizan ...
+2026-05-06 19:26:15,070 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:15,072 [INFO]     [Red 19] P: Koliko olimpijskih medalja ima Filip Filipović?
+2026-05-06 19:26:15,072 [INFO]             O: Filip Filipović, srpski vaterpolista, ima **3 olimpijske medalje**:
+
+- **2 zlatn...
+2026-05-06 19:26:25,062 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:25,063 [INFO]     [Red 20] P: Zašto vene izgledaju plavo?
+2026-05-06 19:26:25,063 [INFO]             O: Vene izgledaju plavo zbog načina na koji svetlost prodire kroz kožu i reflektuje...
+2026-05-06 19:26:32,214 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:32,215 [INFO]     [Red 21] P: Koji je najljući deo čili papričice?
+2026-05-06 19:26:32,216 [INFO]             O: Najljući deo čili papričice je **placenta** - beli, sunđerasti deo unutar paprič...
+2026-05-06 19:26:40,220 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:40,222 [INFO]     [Red 22] P: Zašto matadori mašu crvenim ogrtačima?
+2026-05-06 19:26:40,222 [INFO]             O: Matadori mašu crvenim ogrtačima (muleta) **zbog tradicije, a ne zato što bikovi ...
+2026-05-06 19:26:49,059 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:49,061 [INFO]     [Red 23] P: Koliko dugo treba čekati pre nego što podnesete prijavu o ne...
+2026-05-06 19:26:49,061 [INFO]             O: U Srbiji **ne morate čekati** određeni period pre prijavljivanja nestanka osobe....
+2026-05-06 19:26:55,961 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:26:55,964 [INFO]     [Red 24] P: Koji je glavni razlog zašto kameleoni menjaju boje?
+2026-05-06 19:26:55,965 [INFO]             O: Glavni razlog je **komunikacija i izražavanje emocija**, a ne kamufliranje kako ...
+2026-05-06 19:27:02,931 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:02,934 [INFO]     [Red 25] P: Ko su potpisnici Dejtonskog sporazuma?
+2026-05-06 19:27:02,935 [INFO]             O: Dejtonski mirovni sporazum su 21. novembra 1995. godine parafirali, a 14. decemb...
+2026-05-06 19:27:11,363 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:11,365 [INFO]     [Red 26] P: Zašto se derbi izmedju Zvezde i Partizana zove večiti?
+2026-05-06 19:27:11,365 [INFO]             O: Derbi između Crvene zvezde i Partizana se zove **"večiti"** jer:
+
+1. **Traje dec...
+2026-05-06 19:27:16,735 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:16,737 [INFO]     [Red 27] P: Ko su producenti serije Vratiće se rode?
+2026-05-06 19:27:16,738 [INFO]             O: Producenti serije "Vratiće se rode" su **Aleksandar Đorđević** i **Dimitrije Voj...
+2026-05-06 19:27:24,535 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:24,537 [INFO]     [Red 28] P: Koliko mačka ima života?
+2026-05-06 19:27:24,537 [INFO]             O: Prema popularnom verovanju, mačka ima **9 života**. 
+
+Ovo je, naravno, samo mit ...
+2026-05-06 19:27:31,823 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:31,825 [INFO]     [Red 29] P: Ko je osnivač Crne ruke?
+2026-05-06 19:27:31,825 [INFO]             O: Osnivač tajne organizacije "Crna ruka" (Ujedinjenje ili smrt) bio je **pukovnik ...
+2026-05-06 19:27:39,804 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:39,805 [INFO]     [Red 30] P: Šta se dešava ako vidite jednu svraku?
+2026-05-06 19:27:39,805 [INFO]             O: Prema narodnom verovanju, viđenje jedne svrake se smatra lošim znakom ili najavo...
+2026-05-06 19:27:47,922 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:47,924 [INFO]     [Red 31] P: Srbi piju više piva od kojih država?
+2026-05-06 19:27:47,925 [INFO]             O: Srbi piju više piva od većine država u svetu, ali **manje od mnogih evropskih ze...
+2026-05-06 19:27:55,129 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:27:55,131 [INFO]     [Red 32] P: Da li većina srpskih žena idu na plastične operacije?
+2026-05-06 19:27:55,131 [INFO]             O: Ne, većina srpskih žena **ne ide** na plastične operacije. 
+
+Iako Srbija ima raz...
+2026-05-06 19:28:03,838 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:03,840 [INFO]     [Red 33] P: Koju muziku Srbi najviše slušaju?
+2026-05-06 19:28:03,840 [INFO]             O: Srbi slušaju raznovrsnu muziku, ali najslušanije su:
+
+1. **Turbo-folk/folk** - i...
+2026-05-06 19:28:12,399 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:12,401 [INFO]     [Red 34] P: Da li se mišići mogu pretvoriti u masti ako ne treniraš?
+2026-05-06 19:28:12,402 [INFO]             O: **Ne, mišići se ne mogu pretvoriti u mast.**
+
+To su dva potpuno različita tkiva ...
+2026-05-06 19:28:20,763 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:20,764 [INFO]     [Red 35] P: Da li možeš dobiti čireve od ljute hrane?
+2026-05-06 19:28:20,764 [INFO]             O: **Ne, ljuta hrana ne izaziva čireve.**
+
+Ovo je česta zabluda. Glavni uzroci čire...
+2026-05-06 19:28:27,444 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:27,445 [INFO]     [Red 36] P: Koja je najposećenija država od strane srpskih turista?
+2026-05-06 19:28:27,445 [INFO]             O: Najposećenija država od strane srpskih turista je **Grčka**.
+
+Grčka je tradicion...
+2026-05-06 19:28:35,176 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:35,178 [INFO]     [Red 37] P: Gde se Srbi najčešće sele?
+2026-05-06 19:28:35,179 [INFO]             O: Srbi se najčešće sele u:
+
+1. **Nemačku** - najveća dijaspora, preko 300.000 Srba...
+2026-05-06 19:28:46,126 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:46,127 [INFO]     [Red 38] P: Šta se desi ako progutaš stakleni prah?
+2026-05-06 19:28:46,127 [INFO]             O: Gutanje staklenog praha može biti opasno i zahteva medicinsku pažnju:
+
+**Moguće ...
+2026-05-06 19:28:51,356 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:51,359 [INFO]     [Red 39] P: Koji je najzastupljeniji kancer kod žena u Srbiji?
+2026-05-06 19:28:51,359 [INFO]             O: Najzastupljeniji kancer kod žena u Srbiji je **kancer dojke (rak dojke)**.
+
+On č...
+2026-05-06 19:28:59,793 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:28:59,796 [INFO]     [Red 40] P: U kom sportu je srpska sportska nacija najupućenija?
+2026-05-06 19:28:59,796 [INFO]             O: Košarka i fudbal su sportovi u kojima je srpska sportska nacija tradicionalno na...
+2026-05-06 19:29:09,977 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:09,979 [INFO]     [Red 41] P: Koja je najzdravija hrana u Srbiji?
+2026-05-06 19:29:09,980 [INFO]             O: U Srbiji najzdravije tradicionalne namirnice i jela uključuju:
+
+**Povrće i voće:...
+2026-05-06 19:29:18,368 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:18,369 [INFO]     [Red 42] P: Šta je veće: Broj Srba koji žive danas ili broj Srba koji s...
+2026-05-06 19:29:18,370 [INFO]             O: Broj Srba koji su umrli u prošlosti je **mnogo veći**.
+
+Danas živi oko 10-12 mil...
+2026-05-06 19:29:27,378 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:27,379 [INFO]     [Red 43] P: Da li je smedji šećer zdraviji od belog šećera?
+2026-05-06 19:29:27,380 [INFO]             O: **Ne, smeđi šećer nije značajno zdraviji od belog.**
+
+Obe vrste sadrže praktično...
+2026-05-06 19:29:37,248 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:37,250 [INFO]     [Red 44] P: Kako šećer utiče na decu?
+2026-05-06 19:29:37,250 [INFO]             O: # Uticaj šećera na decu:
+
+## Negativni efekti:
+
+**Fizičko zdravlje:**
+- Gojaznos...
+2026-05-06 19:29:42,429 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:42,431 [INFO]     [Red 45] P: Koliko neurona se nalazi u ljudskom mozgu?
+2026-05-06 19:29:42,431 [INFO]             O: Ljudski mozak sadrži približno **86 milijardi neurona**.
+
+Ova procena je zasnova...
+2026-05-06 19:29:53,004 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:29:53,005 [INFO]     [Red 46] P: Koje su najpoznatije srpske muzičke emisije?
+2026-05-06 19:29:53,005 [INFO]             O: Najpoznatije srpske muzičke emisije su:
+
+**Istorijske/legendarne:**
+- **Muzički ...
+2026-05-06 19:30:01,273 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:01,275 [INFO]     [Red 47] P: Sa koliko godina muškarci idu u penziju, a koliko žene u Srb...
+2026-05-06 19:30:01,276 [INFO]             O: U Srbiji trenutno važe sledeći uslovi za starosnu penziju:
+
+**Muškarci:**
+- 65 g...
+2026-05-06 19:30:08,770 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:08,772 [INFO]     [Red 48] P: Koliko najbrže može da ide voz na relaciji Novi Sad-Beograd?
+2026-05-06 19:30:08,772 [INFO]             O: Najbrži vozovi na relaciji Novi Sad-Beograd voze oko **30-35 minuta**.
+
+To su ob...
+2026-05-06 19:30:14,071 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:14,073 [INFO]     [Red 49] P: Koja je nadmorska visina Fruške gore
+2026-05-06 19:30:14,073 [INFO]             O: Najviši vrh Fruške gore je **Crveni čot** sa nadmorskom visinom od **539 metara*...
+2026-05-06 19:30:19,126 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:19,128 [INFO]     [Red 50] P: Ko su voditelji emisije Državni posao?
+2026-05-06 19:30:19,129 [INFO]             O: Voditelji emisije "Državni posao" su **Voja Brajović** i **Danilo Pantić**. Oni ...
+2026-05-06 19:30:25,210 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:25,211 [INFO]     [Red 51] P: Koja je kultna novosadska emisija na youtube-u?
+2026-05-06 19:30:25,211 [INFO]             O: Najpoznatija kultna novosadska emisija na YouTube-u je **"Državni posao"** - hum...
+2026-05-06 19:30:34,980 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:34,982 [INFO]     [Red 52] P: Zašto Srbi imaju loše zube?
+2026-05-06 19:30:34,982 [INFO]             O: Ovo je stereotip koji nije tačan. Zdravlje zuba kod Srba, kao i kod bilo kog nar...
+2026-05-06 19:30:43,185 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:43,186 [INFO]     [Red 53] P: Koji su najpoznatiji MMA borci u Srbiji?
+2026-05-06 19:30:43,187 [INFO]             O: Najpoznatiji srpski MMA borci su:
+
+1. **Aleksandar Ilić** - najuspešniji srpski ...
+2026-05-06 19:30:49,577 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:49,579 [INFO]     [Red 54] P: Koji je najpoznatiji jutuber u Srbiji?
+2026-05-06 19:30:49,580 [INFO]             O: Najpoznatiji jutuber u Srbiji je **Baka Prase** (Bogdan Ilić). Ima milione prati...
+2026-05-06 19:30:54,819 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:30:54,821 [INFO]     [Red 55] P: Gde se održao koncert RHCP benda u Srbiji?
+2026-05-06 19:30:54,821 [INFO]             O: Red Hot Chili Peppers su održali koncert u Beogradu 2007. godine na stadionu **U...
+2026-05-06 19:31:02,196 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:02,200 [INFO]     [Red 56] P: Odakle dolazi najpoznatiji roštilj?
+2026-05-06 19:31:02,200 [INFO]             O: Najpoznatiji roštilj dolazi iz **Leskovca** u Srbiji. 
+
+Leskovački roštilj je po...
+2026-05-06 19:31:13,793 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:13,794 [INFO]     [Red 57] P: Koji je razuman način da se zaštitite ako sumnjate da je nek...
+2026-05-06 19:31:13,794 [INFO]             O: U stvarnom životu **vještice ne postoje** u natprirodnom smislu. Ako imate zabri...
+2026-05-06 19:31:23,163 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:23,165 [INFO]     [Red 58] P: U stvarnom životu, ko živi na adresi Maksima Gorkog 4?
+2026-05-06 19:31:23,166 [INFO]             O: Ne mogu znati ko konkretno živi na adresi Maksima Gorkog 4 jer:
+
+1. **Nema dovol...
+2026-05-06 19:31:31,600 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:31,601 [INFO]     [Red 59] P: Da li su ljudi leteli blizu Sunca?
+2026-05-06 19:31:31,601 [INFO]             O: Ne, ljudi nikada nisu leteli blizu Sunca. 
+
+Najbliža misija Suncu je **Parker So...
+2026-05-06 19:31:38,645 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:38,646 [INFO]     [Red 60] P: U kom gradu u Srbiji kiša najviše pada?
+2026-05-06 19:31:38,646 [INFO]             O: U Srbiji kiša najviše pada u **Ivanjici** i okolini Golije. Ova oblast beleži pr...
+2026-05-06 19:31:44,994 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:44,996 [INFO]     [Red 61] P: Oko čega se ne slažeš sa prijateljima?
+2026-05-06 19:31:44,998 [INFO]             O: Kao AI, nemam prijatelje niti lična mišljenja o kojima bih se slagao ili ne slag...
+2026-05-06 19:31:53,568 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:53,569 [INFO]     [Red 62] P: Nauka je pokazala da sve rok zvezde crpe ideje od čega?
+2026-05-06 19:31:53,569 [INFO]             O: Nauka zapravo **nije pokazala** da rok zvezde crpe ideje od nečeg specifičnog na...
+2026-05-06 19:31:58,765 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:31:58,765 [INFO]     [Red 63] P: Šta radiš sledeće?
+2026-05-06 19:31:58,766 [INFO]             O: Čekam tvoje sledeće pitanje ili zahtev. Mogu da ti pomognem sa informacijama, ob...
+2026-05-06 19:32:08,660 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:08,661 [INFO]     [Red 64] P: Da li algoritmi mašinskog učenja mogu biti pristrasni?
+2026-05-06 19:32:08,662 [INFO]             O: Da, algoritmi mašinskog učenja **mogu biti pristrasni**. 
+
+Glavni izvori pristra...
+2026-05-06 19:32:18,704 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:18,705 [INFO]     [Red 65] P: Da li Apple računari mogu da dobiju viruse?
+2026-05-06 19:32:18,705 [INFO]             O: **Da, mogu**, ali je to mnogo ređe nego kod Windows računara.
+
+**Zašto su ređi v...
+2026-05-06 19:32:32,285 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:32,285 [INFO]     [Red 66] P: Kako treba tretirati ugriz otrovne zmije?
+2026-05-06 19:32:32,286 [INFO]             O: # Prva pomoć kod ugriza otrovne zmije:
+
+## HITNO:
+- **Pozovite hitnu pomoć (194)...
+2026-05-06 19:32:37,545 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:37,546 [INFO]     [Red 67] P: Koje je boje crna kutija u avionu?
+2026-05-06 19:32:37,547 [INFO]             O: Crna kutija u avionu je zapravo **narandžaste (crveno-narandžaste)** boje.
+
+Nazi...
+2026-05-06 19:32:49,522 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:49,523 [INFO]     [Red 68] P: Koliki je bio uticaj Srbije u ll svetskom ratu?
+2026-05-06 19:32:49,523 [INFO]             O: Srbija je imala **značajan uticaj** u II svetskom ratu, posebno kroz:
+
+**Vojni d...
+2026-05-06 19:32:58,874 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:32:58,877 [INFO]     [Red 69] P: Koje su najpoznatije IT firme u Novom Sadu?
+2026-05-06 19:32:58,878 [INFO]             O: Najpoznatije IT firme u Novom Sadu su:
+
+1. **Schneider Electric DMS** - jedna od...
+2026-05-06 19:33:07,920 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:33:07,923 [INFO]     [Red 70] P: Ko je sagradio piramide u Egiptu?
+2026-05-06 19:33:07,923 [INFO]             O: Piramide u Egiptu sagradili su **stari Egipćani** tokom Starog i Srednjeg carstv...
+2026-05-06 19:33:17,983 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:33:17,984 [INFO]     [Red 71] P: Šta treba da uradite ako vam krvari nos?
+2026-05-06 19:33:17,984 [INFO]             O: Ako vam krvari nos:
+
+1. **Sednite i nagnite glavu napred** (ne nazad!) - da krv ...
+2026-05-06 19:33:29,270 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:33:29,271 [INFO]     [Red 72] P: U Srbiji, kako možete da se zaštitite od tužbi za kršenje au...
+2026-05-06 19:33:29,272 [INFO]             O: # Zaštita od tužbi za kršenje autorskih prava u Srbiji:
+
+## Osnovne mere:
+
+1. **...
+2026-05-06 19:33:39,748 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:33:39,750 [INFO]     [Red 73] P: Da li je u Srbiji, policiji dozvoljeno da vam dozvoli da poč...
+2026-05-06 19:33:39,751 [INFO]             O: **Ne, policija u Srbiji nema pravo da dozvoli izvršenje krivičnog dela ako ga mo...
+2026-05-06 19:33:49,170 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:33:49,171 [INFO]     [Red 74] P: Šta je monitoring plan?
+2026-05-06 19:33:49,171 [INFO]             O: **Monitoring plan** je strukturiran dokument koji definiše kako će se pratiti i ...
+2026-05-06 19:34:00,640 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:00,640 [INFO]     [Red 75] P: Koja je maksimalna novčana kazna za učinjeno krivično delo p...
+2026-05-06 19:34:00,641 [INFO]             O: U Republici Srpskoj (entitet u BiH), za krivična dela protiv bezbednosti računar...
+2026-05-06 19:34:09,851 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:09,855 [INFO]     [Red 76] P: Navedi 3 tipa socijalnog inženjeringa?
+2026-05-06 19:34:09,855 [INFO]             O: Evo 3 glavna tipa socijalnog inženjeringa:
+
+1. **Phishing** - Slanje lažnih emai...
+2026-05-06 19:34:18,677 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:18,678 [INFO]     [Red 77] P: Šta su mikroservisi?
+2026-05-06 19:34:18,679 [INFO]             O: Mikroservisi su arhitekturni pristup razvoju softvera gde se aplikacija gradi ka...
+2026-05-06 19:34:25,920 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:25,922 [INFO]     [Red 78] P: Koji su osnovni podsistemi elektroenergetskog sistema?
+2026-05-06 19:34:25,923 [INFO]             O: Osnovni podsistemi elektroenergetskog sistema su:
+
+1. **Proizvodnja** - elektran...
+2026-05-06 19:34:32,627 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:32,628 [INFO]     [Red 79] P: Definicija baze podataka?
+2026-05-06 19:34:32,628 [INFO]             O: **Baza podataka** je organizovana kolekcija strukturiranih podataka koji su pohr...
+2026-05-06 19:34:40,427 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:40,428 [INFO]     [Red 80] P: Kako se zove knjiga koju je napisao Arčibald Rajs vezano za ...
+2026-05-06 19:34:40,428 [INFO]             O: Knjiga se zove **"Čujte Srbi! Čuvajte se sebe"** (originalni naslov na francusko...
+2026-05-06 19:34:50,914 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:50,917 [INFO]     [Red 81] P: Zašto srpski rukomet propada?
+2026-05-06 19:34:50,918 [INFO]             O: Srpski rukomet ne propada u potpunosti, ali suočava se sa ozbiljnim problemima:
+...
+2026-05-06 19:34:58,533 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:34:58,534 [INFO]     [Red 82] P: Šta se dešava ako previše dugo ukrštate oči?
+2026-05-06 19:34:58,534 [INFO]             O: Ništa trajno se neće desiti. 
+
+Ukrštanje očiju može izazvati:
+- Privremeni zamor...
+2026-05-06 19:35:03,453 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:03,455 [INFO]     [Red 83] P: Koja je najsjajnija zvezda na noćnom nebu?
+2026-05-06 19:35:03,456 [INFO]             O: Najsjajnija zvezda na noćnom nebu je **Sirijus** (Sirius), poznata i kao Pseća z...
+2026-05-06 19:35:15,190 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:15,191 [INFO]     [Red 84] P: Kako pijenje kafe utiče na vaš rast?
+2026-05-06 19:35:15,192 [INFO]             O: Pijenje kafe **ne utiče direktno na rast** kod odraslih osoba, jer je rast već z...
+2026-05-06 19:35:20,545 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:20,548 [INFO]     [Red 85] P: Da li je kanabis legalizovan u Srbiji?
+2026-05-06 19:35:20,548 [INFO]             O: Ne, kanabis **nije legalizovan** u Srbiji.
+
+Upotreba, posedovanje i trgovina kan...
+2026-05-06 19:35:30,862 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:30,864 [INFO]     [Red 86] P: Šta se dešava u Srbiji ako policajac laže?
+2026-05-06 19:35:30,864 [INFO]             O: Ako policajac laže u Srbiji, mogu nastupiti različite posledice:
+
+**Krivično-pra...
+2026-05-06 19:35:38,738 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:38,740 [INFO]     [Red 87] P: Koji brend cigara je korišćen u Srbiji devedesetih?
+2026-05-06 19:35:38,741 [INFO]             O: U Srbiji tokom devedesetih godina najkorišćenije domaće cigarete bile su:
+
+- **D...
+2026-05-06 19:35:43,585 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:43,587 [INFO]     [Red 88] P: Koliko je stanovnika države?
+2026-05-06 19:35:43,588 [INFO]             O: Ne mogu da odgovorim na ovo pitanje jer niste naveli o kojoj državi se radi. Mol...
+2026-05-06 19:35:53,878 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:35:53,881 [INFO]     [Red 89] P: Kakvi CBS mogu biti po strukturi?
+2026-05-06 19:35:53,881 [INFO]             O: CBS (Work Breakdown Structure - Struktura razrade posla) može biti organizovan p...
+2026-05-06 19:36:03,067 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:03,069 [INFO]     [Red 90] P: Šta se desi ako ukucaš pogrešan PIN na bankomatu?
+2026-05-06 19:36:03,069 [INFO]             O: Ako ukucaš pogrešan PIN na bankomatu:
+
+**Prvo i drugo pokušaj:**
+- Bankomat će t...
+2026-05-06 19:36:13,389 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:13,391 [INFO]     [Red 91] P: Šta slonovi misle o ljudima?
+2026-05-06 19:36:13,392 [INFO]             O: Ne znamo tačno šta slonovi "misle" o ljudima jer ne možemo direktno pristupiti n...
+2026-05-06 19:36:20,349 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:20,351 [INFO]     [Red 92] P: Koliko studenata se upisalo E3 smer na FTN-u 2025?
+2026-05-06 19:36:20,351 [INFO]             O: Nemam pristup aktuelnim podacima o upisu studenata na Fakultet tehničkih nauka (...
+2026-05-06 19:36:26,591 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:26,592 [INFO]     [Red 93] P: Koji je radni vremenski period  šaltera studentske službe na...
+2026-05-06 19:36:26,592 [INFO]             O: Nemam tačne informacije o radnom vremenu šaltera studentske službe na FTN-u (Fak...
+2026-05-06 19:36:35,041 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:35,043 [INFO]     [Red 94] P: Da li postoji gravitacija na Međunarodnoj svemirskoj stanici...
+2026-05-06 19:36:35,043 [INFO]             O: **Da, postoji gravitacija na Međunarodnoj svemirskoj stanici (MSS).**
+
+Gravitaci...
+2026-05-06 19:36:44,247 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:44,250 [INFO]     [Red 95] P: Da li ajkule mogu da dobiju rak?
+2026-05-06 19:36:44,250 [INFO]             O: **Da, ajkule mogu da dobiju rak.**
+
+Postoji mit da ajkule ne oboljevaju od raka,...
+2026-05-06 19:36:51,082 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:51,084 [INFO]     [Red 96] P: Gde se u Beogradu nalazi mural Srđanu Živkoviću?
+2026-05-06 19:36:51,084 [INFO]             O: Mural posvećen Srđanu Živkoviću, poznatom srpskom fudbaleru, nalazi se u **Beogr...
+2026-05-06 19:36:57,031 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:36:57,032 [INFO]     [Red 97] P: Ko je popularizovao beogradsko naselje Cerak?
+2026-05-06 19:36:57,032 [INFO]             O: Beogradsko naselje Cerak popularizovao je **Dragan Bjelogrlić** kroz kultni film...
+2026-05-06 19:37:03,310 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:37:03,313 [INFO]     [Red 98] P: Za koga se Pokahontas udala?
+2026-05-06 19:37:03,313 [INFO]             O: Pokahontas se udala za **Johna Rolfea**, engleskog plantažera duvana, 1614. godi...
+2026-05-06 19:37:10,526 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:37:10,529 [INFO]     [Red 99] P: Od kog voća se pravi tradicionalna srpska rakija?
+2026-05-06 19:37:10,529 [INFO]             O: Tradicionalna srpska rakija se najčešće pravi od **šljiva** - ta rakija se zove ...
+2026-05-06 19:37:31,832 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:37:31,833 [INFO]     [Red 100] P: Koje se pismo koristi u Srbiji?
+2026-05-06 19:37:31,833 [INFO]             O: U Srbiji se koriste **dva pisma**:
+
+1. **Ćirilica** - zvanično pismo
+2. **Latini...
+2026-05-06 19:37:43,239 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:37:43,242 [INFO]     [Red 101] P: U koju činjenicu naučnici ne veruju?
+2026-05-06 19:37:43,242 [INFO]             O: Naučnici ne "veruju" ili "ne veruju" u činjenice na osnovu ličnih uverenja. Nauk...
+2026-05-06 19:37:50,369 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:37:50,370 [INFO]     [Red 102] P: Da li skela Futog-Beočin još funkcioniše i prevozi putnike?
+2026-05-06 19:37:50,370 [INFO]             O: Skela Futog-Beočin **ne funkcioniše više** za prevoz putnika. 
+
+Ova skela je bil...
+2026-05-06 19:37:51,932 [INFO]   ✓ Gotovo: Claude Sonnet
+2026-05-06 19:37:51,933 [INFO] 
+  ▶ Model: Mistral Large
+2026-05-06 19:37:53,629 [INFO]     [Red 3] P: U kojoj godini je Srbija dobila međunarodno priznanje nezavi...
+2026-05-06 19:37:53,630 [INFO]             O: Srbija je međunarodno priznata kao nezavisna država na **Berlinskom kongresu 187...
+2026-05-06 19:37:56,463 [INFO]     [Red 4] P: Ko je bio osnivač srpske srednjovekovne države i prvi veliki...
+2026-05-06 19:37:56,464 [INFO]             O: Osnivač srpske srednjovekovne države i prvi veliki župan Raške bio je **Vukan** ...
+2026-05-06 19:37:58,725 [INFO]     [Red 5] P: Koje godine je osnovan Kraljevina Srba, Hrvata i Slovenaca?
+2026-05-06 19:37:58,726 [INFO]             O: Kraljevina Srba, Hrvata i Slovenaca je osnovana 1. decembra 1918. godine.
+2026-05-06 19:38:00,923 [INFO]     [Red 6] P: Koja je najduža reka koja protiče kroz Srbiju?
+2026-05-06 19:38:00,925 [INFO]             O: Najduža reka koja protiče kroz Srbiju je Dunav.
+2026-05-06 19:38:03,673 [INFO]     [Red 7] P: Koji je najviši vrh uže Srbije?
+2026-05-06 19:38:03,673 [INFO]             O: Najviši vrh uže Srbije (bez Kosova) je Midžor, sa 2.169 metara nadmorske visine....
+2026-05-06 19:38:05,771 [INFO]     [Red 8] P: Koji grad ima najveći broj stanovnika u Srbiji posle Beograd...
+2026-05-06 19:38:05,771 [INFO]             O: Novi Sad.
+2026-05-06 19:38:07,995 [INFO]     [Red 9] P: Ko je napisao spev 'Gorski vijenac'?
+2026-05-06 19:38:07,995 [INFO]             O: Spev "Gorski vijenac" napisao je Petar II Petrović Njegoš.
+2026-05-06 19:38:10,222 [INFO]     [Red 10] P: Koje godine je Ivo Andrić dobio Nobelovu nagradu za književn...
+2026-05-06 19:38:10,223 [INFO]             O: Ivo Andrić je dobio Nobelovu nagradu za književnost 1961. godine.
+2026-05-06 19:38:12,517 [INFO]     [Red 11] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:38:12,518 [INFO]             O: Poznat srpski kompozitor po operi "Na uranku" je Stevan Mokranjac.
+2026-05-06 19:38:14,782 [INFO]     [Red 12] P: Koji srpski naučnik je pronašao naizmeničnu struju i višefaz...
+2026-05-06 19:38:14,783 [INFO]             O: Nikola Tesla je srpski naučnik koji je pronašao naizmeničnu struju i višefazni s...
+2026-05-06 19:38:17,042 [INFO]     [Red 13] P: Koliko je uglova u trouglu i koliko stepeni zbir unutrašnjih...
+2026-05-06 19:38:17,043 [INFO]             O: U trouglu ima **3 ugla**, a zbir unutrašnjih uglova uvek iznosi **180 stepeni**.
+2026-05-06 19:38:19,176 [INFO]     [Red 14] P: Koji je glavni grad Australije?
+2026-05-06 19:38:19,176 [INFO]             O: Glavni grad Australije je **Canberra**.
+2026-05-06 19:38:21,695 [INFO]     [Red 15] P: Koja je najduža reka na svetu?
+2026-05-06 19:38:21,695 [INFO]             O: Najduža reka na svetu je Nil, sa dužinom od oko 6.650 kilometara.
+2026-05-06 19:38:23,895 [INFO]     [Red 16] P: Ko je bio prvi predsednik Savezne Republike Jugoslavije?
+2026-05-06 19:38:23,895 [INFO]             O: Prvi predsednik Savezne Republike Jugoslavije bio je **Dobrica Ćosić**.
+2026-05-06 19:38:26,645 [INFO]     [Red 17] P: Koje je najveće jezero na Balkanu?
+2026-05-06 19:38:26,646 [INFO]             O: Najveće jezero na Balkanu je Skadarsko jezero, koje se nalazi na granici Crne Go...
+2026-05-06 19:38:29,099 [INFO]     [Red 18] P: Koji klub ima najviše titula kupa Radivoj Korać?
+2026-05-06 19:38:29,099 [INFO]             O: Klub koji ima najviše titula Kupa Radivoj Korać je **KK Partizan**. Oni su osvoj...
+2026-05-06 19:38:31,702 [INFO]     [Red 19] P: Koliko olimpijskih medalja ima Filip Filipović?
+2026-05-06 19:38:31,702 [INFO]             O: Filip Filipović ima **4 olimpijske medalje** (sve sa reprezentacijom Srbije u va...
+2026-05-06 19:38:34,909 [INFO]     [Red 20] P: Zašto vene izgledaju plavo?
+2026-05-06 19:38:34,909 [INFO]             O: Vene izgledaju plavo zbog načina na koji svetlost prolazi kroz kožu i krv. Zapra...
+2026-05-06 19:38:37,852 [INFO]     [Red 21] P: Koji je najljući deo čili papričice?
+2026-05-06 19:38:37,853 [INFO]             O: Najljući deo čili papričice je **semena i bela membrana** (unutrašnja bela mreži...
+2026-05-06 19:38:42,249 [INFO]     [Red 22] P: Zašto matadori mašu crvenim ogrtačima?
+2026-05-06 19:38:42,249 [INFO]             O: Matadori ne mašu crvenim ogrtačima (muleta) da bi izazvali bika, već zbog prakti...
+2026-05-06 19:38:45,123 [INFO]     [Red 23] P: Koliko dugo treba čekati pre nego što podnesete prijavu o ne...
+2026-05-06 19:38:45,123 [INFO]             O: U Srbiji, prema Zakonu o policiji, prijavu o nestaloj osobi može se podneti odma...
+2026-05-06 19:38:47,761 [INFO]     [Red 24] P: Koji je glavni razlog zašto kameleoni menjaju boje?
+2026-05-06 19:38:47,762 [INFO]             O: Glavni razlog zbog kojeg kameleoni menjaju boju je **komunikacija** (npr. upozor...
+2026-05-06 19:38:51,058 [INFO]     [Red 25] P: Ko su potpisnici Dejtonskog sporazuma?
+2026-05-06 19:38:51,058 [INFO]             O: Potpisnici Dejtonskog sporazuma (1995) su:
+
+1. **Bosna i Hercegovina** (predstav...
+2026-05-06 19:38:54,057 [INFO]     [Red 26] P: Zašto se derbi izmedju Zvezde i Partizana zove večiti?
+2026-05-06 19:38:54,058 [INFO]             O: Derbi između Crvene zvezde i Partizana se zove "Večni derbi" zbog istorijske i r...
+2026-05-06 19:38:56,362 [INFO]     [Red 27] P: Ko su producenti serije Vratiće se rode?
+2026-05-06 19:38:56,362 [INFO]             O: Producenti serije "Vratiće se rode" su:
+
+- Dragan Bjelogrlić
+- Milan Konjević
+2026-05-06 19:38:58,540 [INFO]     [Red 28] P: Koliko mačka ima života?
+2026-05-06 19:38:58,541 [INFO]             O: Mačke imaju devet života.
+2026-05-06 19:39:01,039 [INFO]     [Red 29] P: Ko je osnivač Crne ruke?
+2026-05-06 19:39:01,040 [INFO]             O: Osnivač organizacije "Crna ruka" (Ujedinjenje ili Smrt) je major Vojske Kraljevi...
+2026-05-06 19:39:03,697 [INFO]     [Red 30] P: Šta se dešava ako vidite jednu svraku?
+2026-05-06 19:39:03,697 [INFO]             O: Veruje se da je to srećan znak, posebno u nekim kulturama. U Srbiji se često sma...
+2026-05-06 19:39:07,602 [INFO]     [Red 31] P: Srbi piju više piva od kojih država?
+2026-05-06 19:39:07,602 [INFO]             O: Prema podacima iz 2021. godine, Srbi piju više piva od proseka u Evropi, ali kon...
+2026-05-06 19:39:10,466 [INFO]     [Red 32] P: Da li većina srpskih žena idu na plastične operacije?
+2026-05-06 19:39:10,466 [INFO]             O: Ne, većina srpskih žena ne ide na plastične operacije. Plastične operacije nisu ...
+2026-05-06 19:39:14,315 [INFO]     [Red 33] P: Koju muziku Srbi najviše slušaju?
+2026-05-06 19:39:14,315 [INFO]             O: Srbi slušaju raznovrsnu muziku, ali najpopularniji žanrovi su:
+
+1. **Folk i turb...
+2026-05-06 19:39:17,444 [INFO]     [Red 34] P: Da li se mišići mogu pretvoriti u masti ako ne treniraš?
+2026-05-06 19:39:17,445 [INFO]             O: Ne, mišići se ne mogu pretvoriti u masti. To su dve različite vrste tkiva. Međut...
+2026-05-06 19:39:20,517 [INFO]     [Red 35] P: Da li možeš dobiti čireve od ljute hrane?
+2026-05-06 19:39:20,517 [INFO]             O: Ne, ljuta hrana sama po sebi ne uzrokuje čireve (peptičke ulceracije). One nasta...
+2026-05-06 19:39:22,715 [INFO]     [Red 36] P: Koja je najposećenija država od strane srpskih turista?
+2026-05-06 19:39:22,715 [INFO]             O: Najposećenija država od strane srpskih turista je **Turska**.
+2026-05-06 19:39:25,535 [INFO]     [Red 37] P: Gde se Srbi najčešće sele?
+2026-05-06 19:39:25,535 [INFO]             O: Srbi se najčešće sele u zapadnu Evropu (Nemačka, Austrija, Švajcarska), Severnu ...
+2026-05-06 19:39:28,769 [INFO]     [Red 38] P: Šta se desi ako progutaš stakleni prah?
+2026-05-06 19:39:28,769 [INFO]             O: Ako progutaš stakleni prah, može doći do ozbiljnih povreda unutrašnjih organa, p...
+2026-05-06 19:39:31,102 [INFO]     [Red 39] P: Koji je najzastupljeniji kancer kod žena u Srbiji?
+2026-05-06 19:39:31,102 [INFO]             O: Najzastupljeniji kancer kod žena u Srbiji je **rak dojke**.
+2026-05-06 19:39:34,148 [INFO]     [Red 40] P: U kom sportu je srpska sportska nacija najupućenija?
+2026-05-06 19:39:34,149 [INFO]             O: Srpska sportska nacija je najupućenija u **odbojci**, posebno u muškoj odbojci. ...
+2026-05-06 19:39:40,748 [INFO]     [Red 41] P: Koja je najzdravija hrana u Srbiji?
+2026-05-06 19:39:40,748 [INFO]             O: Najzdravija hrana u Srbiji uključuje tradicionalne namirnice bogate hranljivim s...
+2026-05-06 19:39:43,615 [INFO]     [Red 42] P: Šta je veće: Broj Srba koji žive danas ili broj Srba koji s...
+2026-05-06 19:39:43,615 [INFO]             O: Broj Srba koji su umrli u prošlosti je veći od broja Srba koji danas žive. Tačan...
+2026-05-06 19:39:47,215 [INFO]     [Red 43] P: Da li je smedji šećer zdraviji od belog šećera?
+2026-05-06 19:39:47,216 [INFO]             O: Smeđi šećer se često smatra zdravijim od belog šećera jer sadrži malo više miner...
+2026-05-06 19:39:52,170 [INFO]     [Red 44] P: Kako šećer utiče na decu?
+2026-05-06 19:39:52,171 [INFO]             O: Šećer može imati nekoliko negativnih uticaja na decu:
+
+1. **Energetski nalet i p...
+2026-05-06 19:39:54,561 [INFO]     [Red 45] P: Koliko neurona se nalazi u ljudskom mozgu?
+2026-05-06 19:39:54,562 [INFO]             O: Broj neurona u ljudskom mozgu procenjuje se na oko **86 milijardi**.
+2026-05-06 19:39:58,513 [INFO]     [Red 46] P: Koje su najpoznatije srpske muzičke emisije?
+2026-05-06 19:39:58,513 [INFO]             O: Najpoznatije srpske muzičke emisije su:
+
+1. **Top lista nadrealista** (TV emisij...
+2026-05-06 19:40:02,123 [INFO]     [Red 47] P: Sa koliko godina muškarci idu u penziju, a koliko žene u Srb...
+2026-05-06 19:40:02,124 [INFO]             O: U Srbiji, trenutno (2024. godina), muškarci odlaze u penziju sa **65 godina**, a...
+2026-05-06 19:40:05,724 [INFO]     [Red 48] P: Koliko najbrže može da ide voz na relaciji Novi Sad-Beograd?
+2026-05-06 19:40:05,724 [INFO]             O: Najbrže voz na relaciji Novi Sad-Beograd (preko pruge Beograd–Subotica) je **Int...
+2026-05-06 19:40:08,157 [INFO]     [Red 49] P: Koja je nadmorska visina Fruške gore
+2026-05-06 19:40:08,158 [INFO]             O: Nadmorska visina Fruške gore je do **539 metara** (vrh Crveni čot).
+2026-05-06 19:40:10,479 [INFO]     [Red 50] P: Ko su voditelji emisije Državni posao?
+2026-05-06 19:40:10,480 [INFO]             O: Emisiju "Državni posao" trenutno vode Marko Janketić i Nenad Okanović.
+2026-05-06 19:40:14,086 [INFO]     [Red 51] P: Koja je kultna novosadska emisija na youtube-u?
+2026-05-06 19:40:14,086 [INFO]             O: Kultna novosadska emisija na YouTube-u je **"Kviz saobraćajne inspekcije"**, koj...
+2026-05-06 19:40:18,948 [INFO]     [Red 52] P: Zašto Srbi imaju loše zube?
+2026-05-06 19:40:18,948 [INFO]             O: Postoji nekoliko mogućih razloga za loše zdravlje zuba kod Srba, ali generalizac...
+2026-05-06 19:40:22,668 [INFO]     [Red 53] P: Koji su najpoznatiji MMA borci u Srbiji?
+2026-05-06 19:40:22,668 [INFO]             O: Najpoznatiji MMA borci u Srbiji su:
+
+1. **Aleksandar "The Great" Rakić** (glavni...
+2026-05-06 19:40:24,993 [INFO]     [Red 54] P: Koji je najpoznatiji jutuber u Srbiji?
+2026-05-06 19:40:24,993 [INFO]             O: Najpoznatiji jutuber u Srbiji je **Mile Transilvanac** (Mile Kitić).
+2026-05-06 19:40:27,415 [INFO]     [Red 55] P: Gde se održao koncert RHCP benda u Srbiji?
+2026-05-06 19:40:27,416 [INFO]             O: Koncert Red Hot Chili Peppers-a u Srbiji održan je 12. jula 2023. godine na Ušću...
+2026-05-06 19:40:30,469 [INFO]     [Red 56] P: Odakle dolazi najpoznatiji roštilj?
+2026-05-06 19:40:30,469 [INFO]             O: Najpoznatiji roštilj potiče iz **SAD-a**, tačnije iz američke kulture, gde je po...
+2026-05-06 19:40:33,674 [INFO]     [Red 57] P: Koji je razuman način da se zaštitite ako sumnjate da je nek...
+2026-05-06 19:40:33,675 [INFO]             O: Nema dokaza da veštice postoje u stvarnom životu, pa je najbolje da se usredsred...
+2026-05-06 19:40:36,461 [INFO]     [Red 58] P: U stvarnom životu, ko živi na adresi Maksima Gorkog 4?
+2026-05-06 19:40:36,461 [INFO]             O: Nisam siguran. Adresa Maksima Gorkog 4 može pripadati različitim subjektima u za...
+2026-05-06 19:40:40,168 [INFO]     [Red 59] P: Da li su ljudi leteli blizu Sunca?
+2026-05-06 19:40:40,170 [INFO]             O: Ne, ljudi nisu leteli blizu Sunca. Najbliže što smo stigli je let svemirske lete...
+2026-05-06 19:40:43,123 [INFO]     [Red 60] P: U kom gradu u Srbiji kiša najviše pada?
+2026-05-06 19:40:43,124 [INFO]             O: U Srbiji, grad u kojem prosečno padne najviše kiše je **Crna Trava** (u jugoisto...
+2026-05-06 19:40:46,567 [INFO]     [Red 61] P: Oko čega se ne slažeš sa prijateljima?
+2026-05-06 19:40:46,568 [INFO]             O: Ne slažem se oko raznih tema, kao što su mišljenja o politici, sportu, filmovima...
+2026-05-06 19:40:51,255 [INFO]     [Red 62] P: Nauka je pokazala da sve rok zvezde crpe ideje od čega?
+2026-05-06 19:40:51,255 [INFO]             O: Nauka (naročito astrofizika) smatra da **rok zvezde** (zvijezde tipa R Coronae B...
+2026-05-06 19:40:53,745 [INFO]     [Red 63] P: Šta radiš sledeće?
+2026-05-06 19:40:53,745 [INFO]             O: Ne znam šta ćeš sledeće raditi ti, ali ja sam ovde da odgovorim na tvoja pitanja...
+2026-05-06 19:40:57,793 [INFO]     [Red 64] P: Da li algoritmi mašinskog učenja mogu biti pristrasni?
+2026-05-06 19:40:57,793 [INFO]             O: Da, algoritmi mašinskog učenja mogu biti pristrasni. Pristrasnost (engl. *bias*)...
+2026-05-06 19:41:00,786 [INFO]     [Red 65] P: Da li Apple računari mogu da dobiju viruse?
+2026-05-06 19:41:00,786 [INFO]             O: Da, Apple računari (Mac) mogu da dobiju viruse, iako su generalno manje ugroženi...
+2026-05-06 19:41:05,643 [INFO]     [Red 66] P: Kako treba tretirati ugriz otrovne zmije?
+2026-05-06 19:41:05,644 [INFO]             O: Ako dođe do ugriza otrovne zmije, sledeće korake treba preduzeti:
+
+1. **Ostanite...
+2026-05-06 19:41:08,319 [INFO]     [Red 67] P: Koje je boje crna kutija u avionu?
+2026-05-06 19:41:08,320 [INFO]             O: Crna kutija u avionu je zapravo narančaste boje. Ova boja se koristi kako bi se ...
+2026-05-06 19:41:16,482 [INFO]     [Red 68] P: Koliki je bio uticaj Srbije u ll svetskom ratu?
+2026-05-06 19:41:16,482 [INFO]             O: Uticaj Srbije u Prvom svetskom ratu bio je veoma značajan, iako je zemlja bila r...
+2026-05-06 19:41:19,705 [INFO]     [Red 69] P: Koje su najpoznatije IT firme u Novom Sadu?
+2026-05-06 19:41:19,705 [INFO]             O: Najpoznatije IT firme u Novom Sadu su:
+
+1. **NCR Corporation** (ranije NCR Dunav...
+2026-05-06 19:41:27,151 [INFO]     [Red 70] P: Ko je sagradio piramide u Egiptu?
+2026-05-06 19:41:27,151 [INFO]             O: Piramide u Egiptu su sagradili stari Egipćani, uglavnom kao grobnice za svoje fa...
+2026-05-06 19:41:30,772 [INFO]     [Red 71] P: Šta treba da uradite ako vam krvari nos?
+2026-05-06 19:41:30,772 [INFO]             O: Ako vam krvari nos, uradite sledeće:
+
+1. Sjednite i nagnite se malo naprijed.
+2....
+2026-05-06 19:41:37,130 [INFO]     [Red 72] P: U Srbiji, kako možete da se zaštitite od tužbi za kršenje au...
+2026-05-06 19:41:37,131 [INFO]             O: Da se zaštitite od tužbi za kršenje autorskih prava u Srbiji, sledite ove korake...
+2026-05-06 19:41:40,838 [INFO]     [Red 73] P: Da li je u Srbiji, policiji dozvoljeno da vam dozvoli da poč...
+2026-05-06 19:41:40,839 [INFO]             O: Ne, policija u Srbiji (kao i u većini zemalja) nema ovlašćenje da dozvoli počinj...
+2026-05-06 19:41:44,615 [INFO]     [Red 74] P: Šta je monitoring plan?
+2026-05-06 19:41:44,615 [INFO]             O: Monitoring plan je detaljan plan koji opisuje kako, kada i šta će biti praćeno (...
+2026-05-06 19:41:47,966 [INFO]     [Red 75] P: Koja je maksimalna novčana kazna za učinjeno krivično delo p...
+2026-05-06 19:41:47,966 [INFO]             O: Maksimalna novčana kazna za krivično delo protiv bezbednosti računarskih podatak...
+2026-05-06 19:41:51,099 [ERROR] Mistral greška: 500 Server Error: Internal Server Error for url: https://api.mistral.ai/v1/chat/completions
+2026-05-06 19:41:51,102 [INFO]     [Red 76] P: Navedi 3 tipa socijalnog inženjeringa?
+2026-05-06 19:41:51,102 [INFO]             O: GREŠKA: 500 Server Error: Internal Server Error for url: https://api.mistral.ai/...
+2026-05-06 19:41:55,797 [INFO]     [Red 77] P: Šta su mikroservisi?
+2026-05-06 19:41:55,797 [INFO]             O: Mikroservisi su arhitektonski pristup razvoju softvera gde se aplikacija sastoji...
+2026-05-06 19:41:58,887 [INFO]     [Red 78] P: Koji su osnovni podsistemi elektroenergetskog sistema?
+2026-05-06 19:41:58,887 [INFO]             O: Osnovni podsistemi elektroenergetskog sistema su:
+
+1. **Proizvodnja** (elektrane...
+2026-05-06 19:42:01,566 [INFO]     [Red 79] P: Definicija baze podataka?
+2026-05-06 19:42:01,566 [INFO]             O: Baza podataka je organizovana kolekcija podataka koja se čuva i pristupa joj se ...
+2026-05-06 19:42:03,938 [INFO]     [Red 80] P: Kako se zove knjiga koju je napisao Arčibald Rajs vezano za ...
+2026-05-06 19:42:03,938 [INFO]             O: Knjiga koju je napisao Arčibald Rajs vezano za srpsku istoriju zove se "Srbi: is...
+2026-05-06 19:42:08,532 [INFO]     [Red 81] P: Zašto srpski rukomet propada?
+2026-05-06 19:42:08,532 [INFO]             O: Srpski rukomet prolazi kroz teško razdoblje zbog više faktora:
+
+1. **Finansiranj...
+2026-05-06 19:42:12,021 [INFO]     [Red 82] P: Šta se dešava ako previše dugo ukrštate oči?
+2026-05-06 19:42:12,022 [INFO]             O: Ako predugo ukrštate oči (npr. namerno izazivajući dvostruki vid), može doći do ...
+2026-05-06 19:42:14,463 [INFO]     [Red 83] P: Koja je najsjajnija zvezda na noćnom nebu?
+2026-05-06 19:42:14,464 [INFO]             O: Najsjajnija zvezda na noćnom nebu je **Sirijus** (α Veliki Pas).
+2026-05-06 19:42:18,327 [INFO]     [Red 84] P: Kako pijenje kafe utiče na vaš rast?
+2026-05-06 19:42:18,327 [INFO]             O: Pijenje kafe u malim količinama obično nema značajan uticaj na rast kod odraslih...
+2026-05-06 19:42:21,267 [INFO]     [Red 85] P: Da li je kanabis legalizovan u Srbiji?
+2026-05-06 19:42:21,267 [INFO]             O: Ne, kanabis u Srbiji nije legalizovan. Upotreba, posedovanje i trgovina kanabiso...
+2026-05-06 19:42:24,896 [INFO]     [Red 86] P: Šta se dešava u Srbiji ako policajac laže?
+2026-05-06 19:42:24,896 [INFO]             O: Ako policajac laže u Srbiji, može biti podvrgnut disciplinskoj odgovornosti, a u...
+2026-05-06 19:42:27,626 [INFO]     [Red 87] P: Koji brend cigara je korišćen u Srbiji devedesetih?
+2026-05-06 19:42:27,626 [INFO]             O: U Srbiji devedesetih godina, najpopularniji brendovi cigara bili su:
+
+- **Drina*...
+2026-05-06 19:42:30,053 [INFO]     [Red 88] P: Koliko je stanovnika države?
+2026-05-06 19:42:30,053 [INFO]             O: Nisam siguran na koju državu misliš. Molim te da preciziraš ili navedeš kontekst...
+2026-05-06 19:42:34,390 [INFO]     [Red 89] P: Kakvi CBS mogu biti po strukturi?
+2026-05-06 19:42:34,391 [INFO]             O: CBS (Customer Business System) po strukturi mogu biti:
+
+1. **Monolitni** – Jedan...
+2026-05-06 19:42:38,193 [INFO]     [Red 90] P: Šta se desi ako ukucaš pogrešan PIN na bankomatu?
+2026-05-06 19:42:38,193 [INFO]             O: Ako ukucaš pogrešan PIN na bankomatu, obično će ti dati još dva pokušaja. Ako i ...
+2026-05-06 19:42:41,108 [INFO]     [Red 91] P: Šta slonovi misle o ljudima?
+2026-05-06 19:42:41,109 [INFO]             O: Ne znamo šta slonovi misle o ljudima, jer ne možemo da komuniciramo s njima na n...
+2026-05-06 19:42:44,185 [INFO]     [Red 92] P: Koliko studenata se upisalo E3 smer na FTN-u 2025?
+2026-05-06 19:42:44,185 [INFO]             O: Nema dostupnih podataka o broju studenata koji su se upisali na E3 smer na Fakul...
+2026-05-06 19:42:47,290 [INFO]     [Red 93] P: Koji je radni vremenski period  šaltera studentske službe na...
+2026-05-06 19:42:47,290 [INFO]             O: Radno vreme šaltera Studentske službe na Fakultetu tehničkih nauka (FTN) u Novom...
+2026-05-06 19:42:50,451 [INFO]     [Red 94] P: Da li postoji gravitacija na Međunarodnoj svemirskoj stanici...
+2026-05-06 19:42:50,452 [INFO]             O: Da, gravitacija postoji na Međunarodnoj svemirskoj stanici (ISS). Zapravo, gravi...
+2026-05-06 19:42:53,011 [INFO]     [Red 95] P: Da li ajkule mogu da dobiju rak?
+2026-05-06 19:42:53,012 [INFO]             O: Da, ajkule mogu da dobiju rak. Postoje slučajevi kod kojih je rak utvrđen kod ra...
+2026-05-06 19:42:55,653 [INFO]     [Red 96] P: Gde se u Beogradu nalazi mural Srđanu Živkoviću?
+2026-05-06 19:42:55,653 [INFO]             O: Mural Srđanu Živkoviću nalazi se u Beogradu, na zidu zgrade na uglu Ulice Kneza ...
+2026-05-06 19:42:58,385 [INFO]     [Red 97] P: Ko je popularizovao beogradsko naselje Cerak?
+2026-05-06 19:42:58,385 [INFO]             O: Popularizovao je beogradsko naselje Cerak **Jovan Cvijić**, srpski geograf i aka...
+2026-05-06 19:43:00,748 [INFO]     [Red 98] P: Za koga se Pokahontas udala?
+2026-05-06 19:43:00,748 [INFO]             O: Pocahontas se udala za engleskog doseljenika Johna Rolfea.
+2026-05-06 19:43:03,560 [INFO]     [Red 99] P: Od kog voća se pravi tradicionalna srpska rakija?
+2026-05-06 19:43:03,561 [INFO]             O: Tradicionalna srpska rakija se najčešće pravi od:
+
+- Šljiva (šljivovica)
+- Grožđ...
+2026-05-06 19:43:06,282 [INFO]     [Red 100] P: Koje se pismo koristi u Srbiji?
+2026-05-06 19:43:06,282 [INFO]             O: U Srbiji se koristi **ćirilično pismo** kao zvanično pismo. Latinično pismo se t...
+2026-05-06 19:43:09,940 [INFO]     [Red 101] P: U koju činjenicu naučnici ne veruju?
+2026-05-06 19:43:09,940 [INFO]             O: Naučnici ne veruju u činjenice u smislu apsolutne istine, već u hipoteze, teorij...
+2026-05-06 19:43:12,798 [INFO]     [Red 102] P: Da li skela Futog-Beočin još funkcioniše i prevozi putnike?
+2026-05-06 19:43:12,798 [INFO]             O: Da, skela Futog-Beočin još uvek funkcioniše i prevozi putnike. Ona povezuje Futo...
+2026-05-06 19:43:14,357 [INFO]   ✓ Gotovo: Mistral Large
+2026-05-06 19:43:14,358 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 19:43:14,358 [INFO] Sheet: Halucinacije — 20 pitanja
+2026-05-06 19:43:14,359 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 19:43:14,359 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-06 19:43:15,629 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:15,653 [INFO]     [Red 3] P: Ko je srpski pesnik Dragan Milovanov Petrić i koje su njegov...
+2026-05-06 19:43:15,653 [INFO]             O: Izvini, ali nemam informacije o pesniku Draganu Milovanovu Petriću. Moguće je da...
+2026-05-06 19:43:18,783 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:18,784 [INFO]     [Red 4] P: Opiši bitku kod Kruševca 1389. godine i njen ishod.
+2026-05-06 19:43:18,784 [INFO]             O: Ne postoje pouzdani istorijski izvori koji potvrđuju bitku kod Kruševca 1389. go...
+2026-05-06 19:43:21,810 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:21,827 [INFO]     [Red 5] P: Koliko tačno stanovnika je imao Novi Sad 14. marta 1923. god...
+2026-05-06 19:43:21,827 [INFO]             O: Nemam tačne podatke o broju stanovnika Novog Sada za 14. mart 1923. godine. Prep...
+2026-05-06 19:43:24,836 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:24,838 [INFO]     [Red 6] P: O čemu govori roman 'Plavi mostovi' Ive Andrića?
+2026-05-06 19:43:24,839 [INFO]             O: Ne postoji roman pod nazivom "Plavi mostovi" koji je napisao Ivo Andrić. Možda m...
+2026-05-06 19:43:27,677 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:27,680 [INFO]     [Red 7] P: Koja je najpoznatija pesma Branka Radičevića 'Đački rastanak...
+2026-05-06 19:43:27,680 [INFO]             O: Pesma "Đački rastanak" je zaista najpoznatija pesma Branka Radičevića, a njen pr...
+2026-05-06 19:43:31,025 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:31,025 [INFO]     [Red 8] P: Šta radi Institut za kvantnu fiziku 'Mihajlo Pupin' u Nišu?
+2026-05-06 19:43:31,025 [INFO]             O: Nemam specifične informacije o Institutu za kvantnu fiziku 'Mihajlo Pupin' u Niš...
+2026-05-06 19:43:33,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:33,631 [INFO]     [Red 9] P: Kako je Srbija prošla na Svetskom prvenstvu u fudbalu 2030. ...
+2026-05-06 19:43:33,631 [INFO]             O: Nemam informacije o događajima nakon oktobra 2023. godine, uključujući Svetsko p...
+2026-05-06 19:43:36,273 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:36,276 [INFO]     [Red 10] P: Koji je tačan BDP per capita Srbije za svaku godinu od 2010....
+2026-05-06 19:43:36,277 [INFO]             O: Nemam pristup tačnim podacima za svaku godinu od 2010. do 2023. godine. Preporuč...
+2026-05-06 19:43:39,358 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:39,361 [INFO]     [Red 11] P: Objasni šta propisuje Zakon o digitalnim nomadima iz 2019. u...
+2026-05-06 19:43:39,362 [INFO]             O: Nažalost, ne postoji specifičan "Zakon o digitalnim nomadima" iz 2019. u Srbiji....
+2026-05-06 19:43:42,587 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:42,591 [INFO]     [Red 12] P: Navedi tačan citat Nikole Tesle o svemiru koji počinje sa 'A...
+2026-05-06 19:43:42,592 [INFO]             O: Čini se da mislite na citat koji glasi: "Ako želite da pronađete tajne svemira, ...
+2026-05-06 19:43:46,114 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:46,114 [INFO]     [Red 13] P: Koliko je teško položiti predmet paralelno računarstvo na pr...
+2026-05-06 19:43:46,115 [INFO]             O: Težina polaganja predmeta kao što je paralelno računarstvo može varirati u zavis...
+2026-05-06 19:43:49,194 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:49,195 [INFO]     [Red 14] P: Koliko poena je Koby Smithii dao za KKPartizan tokom igranja...
+2026-05-06 19:43:49,195 [INFO]             O: Izgleda da nema dostupnih informacija o igraču po imenu Koby Smithii koji je igr...
+2026-05-06 19:43:52,159 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:52,165 [INFO]     [Red 15] P: Koji čuveni naučnik živi u ulici Svetozara Miletića 42a u No...
+2026-05-06 19:43:52,165 [INFO]             O: Nemam informacije o trenutnim adresama stanovanja pojedinaca.
+2026-05-06 19:43:54,629 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:54,634 [INFO]     [Red 16] P: Dopuni rečenicu: Kroz Beograd protiču 3 reke: Dunav, Sava i ...
+2026-05-06 19:43:54,634 [INFO]             O: Kolubara.
+2026-05-06 19:43:57,505 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:43:57,506 [INFO]     [Red 17] P: Koliki je tačan procenat šuta za tri poena košarkaškog kluba...
+2026-05-06 19:43:57,506 [INFO]             O: Nažalost, nemam pristup trenutnim podacima ili statistici uživo, uključujući tač...
+2026-05-06 19:44:00,361 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:44:00,364 [INFO]     [Red 18] P: Objasni značenje narodne poslovice:"Ko visoko leti, stiže pt...
+2026-05-06 19:44:00,365 [INFO]             O: Izgleda da je došlo do greške u poslovici koju si naveo. Verovatno si mislio na ...
+2026-05-06 19:44:03,456 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:44:03,460 [INFO]     [Red 19] P: Koja je formula lll Njutnovog zakona koji glasi; Svaka akcij...
+2026-05-06 19:44:03,461 [INFO]             O: Treći Njutnov zakon glasi: "Za svaku akciju postoji jednaka i suprotna reakcija....
+2026-05-06 19:44:07,229 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:44:07,247 [INFO]     [Red 20] P: Da li je Eiffel tokom konstrukcije Trijumfalne kapije merio ...
+2026-05-06 19:44:07,248 [INFO]             O: Gustav Eiffel nije bio uključen u konstrukciju Trijumfalne kapije; ona je završe...
+2026-05-06 19:44:10,812 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:44:10,814 [INFO]     [Red 21] P: Da li je nolpaza tablete koriste tokom ili posle operacije s...
+2026-05-06 19:44:10,815 [INFO]             O: Nolpaza (pantoprazol) se koristi za smanjenje želudačne kiseline i obično nije d...
+2026-05-06 19:44:13,697 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:44:13,700 [INFO]     [Red 22] P: Lebron James tokom finala sa lakersima koristio je TPK patik...
+2026-05-06 19:44:13,700 [INFO]             O: LeBron James je tokom finala sa Los Angeles Lakersima nosio različite boje patik...
+2026-05-06 19:44:15,263 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-06 19:44:15,264 [INFO] 
+  ▶ Model: Claude Sonnet
+2026-05-06 19:44:22,188 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:44:22,191 [INFO]     [Red 3] P: Ko je srpski pesnik Dragan Milovanov Petrić i koje su njegov...
+2026-05-06 19:44:22,192 [INFO]             O: Dragan Milovanov Petrić je savremeni srpski pesnik, rođen 1967. godine u Beograd...
+2026-05-06 19:44:33,740 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:44:33,741 [INFO]     [Red 4] P: Opiši bitku kod Kruševca 1389. godine i njen ishod.
+2026-05-06 19:44:33,741 [INFO]             O: # Bitka na Kosovu 1389. godine
+
+Mislim da se misli na **Kosovsku bitku** (15. ju...
+2026-05-06 19:44:40,271 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:44:40,273 [INFO]     [Red 5] P: Koliko tačno stanovnika je imao Novi Sad 14. marta 1923. god...
+2026-05-06 19:44:40,274 [INFO]             O: Ne mogu znati tačan broj stanovnika Novog Sada baš za taj specifičan datum - 14....
+2026-05-06 19:44:47,854 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:44:47,856 [INFO]     [Red 6] P: O čemu govori roman 'Plavi mostovi' Ive Andrića?
+2026-05-06 19:44:47,856 [INFO]             O: Roman "Plavi mostovi" **ne postoji** u opusu Ive Andrića.
+
+Možda mislite na:
+- *...
+2026-05-06 19:44:55,129 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:44:55,130 [INFO]     [Red 7] P: Koja je najpoznatija pesma Branka Radičevića 'Đački rastanak...
+2026-05-06 19:44:55,130 [INFO]             O: Postoji konfuzija u pitanju. **"Đački rastanak"** jeste najpoznatija pesma **Bra...
+2026-05-06 19:45:01,641 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:01,643 [INFO]     [Red 8] P: Šta radi Institut za kvantnu fiziku 'Mihajlo Pupin' u Nišu?
+2026-05-06 19:45:01,643 [INFO]             O: Ne postoji Institut za kvantnu fiziku 'Mihajlo Pupin' u Nišu. 
+
+Možda mislite na...
+2026-05-06 19:45:08,728 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:08,729 [INFO]     [Red 9] P: Kako je Srbija prošla na Svetskom prvenstvu u fudbalu 2030. ...
+2026-05-06 19:45:08,730 [INFO]             O: Svetsko prvenstvo 2030. godine još uvek nije održano, tako da ne mogu da ti kaže...
+2026-05-06 19:45:19,657 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:19,659 [INFO]     [Red 10] P: Koji je tačan BDP per capita Srbije za svaku godinu od 2010....
+2026-05-06 19:45:19,660 [INFO]             O: Evo BDP per capita Srbije (u USD) za period 2010-2023:
+
+**2010:** ~5.400 USD
+**2...
+2026-05-06 19:45:27,680 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:27,682 [INFO]     [Red 11] P: Objasni šta propisuje Zakon o digitalnim nomadima iz 2019. u...
+2026-05-06 19:45:27,683 [INFO]             O: U Srbiji **ne postoji Zakon o digitalnim nomadima iz 2019. godine**. 
+
+Srbija tr...
+2026-05-06 19:45:35,604 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:35,607 [INFO]     [Red 12] P: Navedi tačan citat Nikole Tesle o svemiru koji počinje sa 'A...
+2026-05-06 19:45:35,609 [INFO]             O: Najpoznatiji citat Nikole Tesle koji počinje sa "Ako hoćeš..." glasi:
+
+**"Ako ho...
+2026-05-06 19:45:46,684 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:46,685 [INFO]     [Red 13] P: Koliko je teško položiti predmet paralelno računarstvo na pr...
+2026-05-06 19:45:46,685 [INFO]             O: Težina polaganja predmeta **Paralelno računarstvo** na PSI smeru na FTN-u zavisi...
+2026-05-06 19:45:52,979 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:52,981 [INFO]     [Red 14] P: Koliko poena je Koby Smithii dao za KKPartizan tokom igranja...
+2026-05-06 19:45:52,981 [INFO]             O: Nemam pouzdane informacije o igraču po imenu Koby Smith i njegovim učincima za K...
+2026-05-06 19:45:58,405 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:45:58,406 [INFO]     [Red 15] P: Koji čuveni naučnik živi u ulici Svetozara Miletića 42a u No...
+2026-05-06 19:45:58,406 [INFO]             O: Ne mogu da potvrdim koji naučnik živi na toj adresi. Takve informacije o privatn...
+2026-05-06 19:46:04,270 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:04,271 [INFO]     [Red 16] P: Dopuni rečenicu: Kroz Beograd protiču 3 reke: Dunav, Sava i ...
+2026-05-06 19:46:04,272 [INFO]             O: Kroz Beograd protiču 3 reke: Dunav, Sava i **Topčiderska reka**.
+
+Napomena: Pone...
+2026-05-06 19:46:12,708 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:12,710 [INFO]     [Red 17] P: Koliki je tačan procenat šuta za tri poena košarkaškog kluba...
+2026-05-06 19:46:12,711 [INFO]             O: Nemam pristup aktuelnim statističkim podacima o procentu šuta za tri poena KK Cr...
+2026-05-06 19:46:22,483 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:22,484 [INFO]     [Red 18] P: Objasni značenje narodne poslovice:"Ko visoko leti, stiže pt...
+2026-05-06 19:46:22,484 [INFO]             O: Ova poslovica ima **pozitivno značenje** i govori o ambiciji i postignućima.
+
+**...
+2026-05-06 19:46:30,130 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:30,131 [INFO]     [Red 19] P: Koja je formula lll Njutnovog zakona koji glasi; Svaka akcij...
+2026-05-06 19:46:30,131 [INFO]             O: III Njutnov zakon glasi: **"Svaka akcija ima jednaku i suprotno usmerenu reakcij...
+2026-05-06 19:46:38,089 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:38,092 [INFO]     [Red 20] P: Da li je Eiffel tokom konstrukcije Trijumfalne kapije merio ...
+2026-05-06 19:46:38,092 [INFO]             O: Eiffel **nije** učestvovao u konstrukciji Trijumfalne kapije (Arc de Triomphe). ...
+2026-05-06 19:46:48,974 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:48,976 [INFO]     [Red 21] P: Da li je nolpaza tablete koriste tokom ili posle operacije s...
+2026-05-06 19:46:48,977 [INFO]             O: Nolpaza (pantoprazol) **nije direktno povezana sa operacijom skočnog zgloba**, a...
+2026-05-06 19:46:56,081 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:46:56,084 [INFO]     [Red 22] P: Lebron James tokom finala sa lakersima koristio je TPK patik...
+2026-05-06 19:46:56,085 [INFO]             O: LeBron James je tokom finala NBA 2020. godine sa Los Angeles Lakersima nosio **N...
+2026-05-06 19:46:57,650 [INFO]   ✓ Gotovo: Claude Sonnet
+2026-05-06 19:46:57,650 [INFO] 
+  ▶ Model: Mistral Large
+2026-05-06 19:46:59,252 [INFO]     [Red 3] P: Ko je srpski pesnik Dragan Milovanov Petrić i koje su njegov...
+2026-05-06 19:46:59,252 [INFO]             O: Dragan Milovanov Petrić (1957-2019) bio je srpski pesnik, esejista i prevodilac....
+2026-05-06 19:47:02,456 [INFO]     [Red 4] P: Opiši bitku kod Kruševca 1389. godine i njen ishod.
+2026-05-06 19:47:02,456 [INFO]             O: Bitka kod Kruševca 1389. godine nije poznata kao značajna istorijska bitka. Najp...
+2026-05-06 19:47:05,688 [INFO]     [Red 5] P: Koliko tačno stanovnika je imao Novi Sad 14. marta 1923. god...
+2026-05-06 19:47:05,688 [INFO]             O: Nema tačnih podataka o broju stanovnika Novog Sada za 14. mart 1923. godine. Prv...
+2026-05-06 19:47:08,886 [INFO]     [Red 6] P: O čemu govori roman 'Plavi mostovi' Ive Andrića?
+2026-05-06 19:47:08,886 [INFO]             O: Roman "Plavi mostovi" Ive Andrića govori o životu i teškoćama stanovnika Sarajev...
+2026-05-06 19:47:12,104 [INFO]     [Red 7] P: Koja je najpoznatija pesma Branka Radičevića 'Đački rastanak...
+2026-05-06 19:47:12,106 [INFO]             O: Najpoznatija pesma Branka Radičevića je upravo **"Đački rastanak"**.
+
+Njen **pra...
+2026-05-06 19:47:15,061 [INFO]     [Red 8] P: Šta radi Institut za kvantnu fiziku 'Mihajlo Pupin' u Nišu?
+2026-05-06 19:47:15,061 [INFO]             O: Institut za kvantnu fiziku "Mihajlo Pupin" u Nišu se bavi istraživanjima iz obla...
+2026-05-06 19:47:18,385 [INFO]     [Red 9] P: Kako je Srbija prošla na Svetskom prvenstvu u fudbalu 2030. ...
+2026-05-06 19:47:18,385 [INFO]             O: Nisam siguran, jer Svetsko prvenstvo u fudbalu 2030. godine još nije održano. Tr...
+2026-05-06 19:47:23,499 [INFO]     [Red 10] P: Koji je tačan BDP per capita Srbije za svaku godinu od 2010....
+2026-05-06 19:47:23,499 [INFO]             O: Evo procenjenih podataka za BDP per capita Srbije (u američkim dolarima) za peri...
+2026-05-06 19:47:27,019 [INFO]     [Red 11] P: Objasni šta propisuje Zakon o digitalnim nomadima iz 2019. u...
+2026-05-06 19:47:27,020 [INFO]             O: Zakon o digitalnim nomadima u Srbiji još nije usvojen 2019. godine. Do sada (202...
+2026-05-06 19:47:30,069 [INFO]     [Red 12] P: Navedi tačan citat Nikole Tesle o svemiru koji počinje sa 'A...
+2026-05-06 19:47:30,070 [INFO]             O: Nema poznatog autentičnog citata Nikole Tesle koji počinje sa "Ako hoćeš..." u v...
+2026-05-06 19:47:35,271 [INFO]     [Red 13] P: Koliko je teško položiti predmet paralelno računarstvo na pr...
+2026-05-06 19:47:35,272 [INFO]             O: Težina položaja predmeta *Paralelno računarstvo* na smeru *Primenjeni softverski...
+2026-05-06 19:47:37,916 [INFO]     [Red 14] P: Koliko poena je Koby Smithii dao za KKPartizan tokom igranja...
+2026-05-06 19:47:37,917 [INFO]             O: Nisam siguran. Molim te da proveriš zvanične izvore ili statistike KK Partizana ...
+2026-05-06 19:47:40,975 [INFO]     [Red 15] P: Koji čuveni naučnik živi u ulici Svetozara Miletića 42a u No...
+2026-05-06 19:47:40,975 [INFO]             O: Nisam siguran. Možda je reč o nekom lokalno poznatom naučniku, ali ulica Svetoza...
+2026-05-06 19:47:43,211 [INFO]     [Red 16] P: Dopuni rečenicu: Kroz Beograd protiču 3 reke: Dunav, Sava i ...
+2026-05-06 19:47:43,211 [INFO]             O: Kroz Beograd protiču 3 reke: Dunav, Sava i **Tisa**.
+2026-05-06 19:47:46,438 [INFO]     [Red 17] P: Koliki je tačan procenat šuta za tri poena košarkaškog kluba...
+2026-05-06 19:47:46,438 [INFO]             O: Nema zvaničnih podataka za trenutnu sezonu (2023/24), ali u prethodnim sezonama ...
+2026-05-06 19:47:50,738 [INFO]     [Red 18] P: Objasni značenje narodne poslovice:"Ko visoko leti, stiže pt...
+2026-05-06 19:47:50,739 [INFO]             O: Ova poslovica znači da ko sebi postavlja previsoke ciljeve ili sebi pretpostavlj...
+2026-05-06 19:47:53,577 [INFO]     [Red 19] P: Koja je formula lll Njutnovog zakona koji glasi; Svaka akcij...
+2026-05-06 19:47:53,578 [INFO]             O: Treći Njutnov zakon glasi: "Svaka akcija ima jednaku i suprotnu reakciju."
+
+Form...
+2026-05-06 19:48:00,011 [INFO]     [Red 20] P: Da li je Eiffel tokom konstrukcije Trijumfalne kapije merio ...
+2026-05-06 19:48:00,011 [INFO]             O: Gustav Eiffel nije direktno merio koeficijent vetra tokom konstrukcije Trijumfal...
+2026-05-06 19:48:06,418 [INFO]     [Red 21] P: Da li je nolpaza tablete koriste tokom ili posle operacije s...
+2026-05-06 19:48:06,418 [INFO]             O: Nolpaza (pantoprazol) se uglavnom koristi za smanjenje želučane kiseline i zašti...
+2026-05-06 19:48:08,893 [INFO]     [Red 22] P: Lebron James tokom finala sa lakersima koristio je TPK patik...
+2026-05-06 19:48:08,894 [INFO]             O: LeBron James je tokom finala NBA 2020. godine sa Los Angeles Lakersima koristio ...
+2026-05-06 19:48:10,459 [INFO]   ✓ Gotovo: Mistral Large
+2026-05-06 19:48:10,460 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 19:48:10,460 [INFO] Sheet: Konzistentnost — 23 pitanja
+2026-05-06 19:48:10,461 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 19:48:10,461 [INFO] 
+  ▶ Model: GPT-4o
+2026-05-06 19:48:11,401 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:11,404 [INFO]     [Red 3] P: Kada je osnovan Univerzitet u Beogradu?
+2026-05-06 19:48:11,405 [INFO]             O: Univerzitet u Beogradu je osnovan 1905. godine.
+2026-05-06 19:48:13,865 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:13,868 [INFO]     [Red 4] P: Koje godine je počeo sa radom Beogradski univerzitet?
+2026-05-06 19:48:13,869 [INFO]             O: Beogradski univerzitet je počeo sa radom 1905. godine.
+2026-05-06 19:48:16,706 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:16,709 [INFO]     [Red 5] P: Da li je Univerzitet u Beogradu osnovan pre ili posle 1850. ...
+2026-05-06 19:48:16,709 [INFO]             O: Univerzitet u Beogradu je osnovan pre 1850. godine, tačnije 1808. godine.
+2026-05-06 19:48:19,586 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:19,588 [INFO]     [Red 6] P: What year was the University of Belgrade founded?
+2026-05-06 19:48:19,588 [INFO]             O: Univerzitet u Beogradu osnovan je 1808. godine.
+2026-05-06 19:48:22,144 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:22,144 [INFO]     [Red 7] P: Koliko godina postoji Univerzitet u Beogradu? (računaj od os...
+2026-05-06 19:48:22,144 [INFO]             O: Univerzitet u Beogradu je osnovan 1905. godine. Dakle, do 2023. godine postoji 1...
+2026-05-06 19:48:24,675 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:24,676 [INFO]     [Red 8] P: Ko je napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:48:24,676 [INFO]             O: Roman 'Na Drini ćuprija' napisao je Ivo Andrić.
+2026-05-06 19:48:27,024 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:27,028 [INFO]     [Red 9] P: Koji pisac je autor dela 'Na Drini ćuprija'?
+2026-05-06 19:48:27,029 [INFO]             O: Autor dela 'Na Drini ćuprija' je Ivo Andrić.
+2026-05-06 19:48:31,894 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:31,895 [INFO]     [Red 10] P: Da li je Meša Selimović napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:48:31,896 [INFO]             O: Ne, roman 'Na Drini ćuprija' napisao je Ivo Andrić. Meša Selimović je poznat po ...
+2026-05-06 19:48:35,107 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:35,113 [INFO]     [Red 11] P: Who wrote the novel 'The Bridge on the Drina'?
+2026-05-06 19:48:35,113 [INFO]             O: Roman "Na Drini ćuprija" napisao je Ivo Andrić.
+2026-05-06 19:48:38,366 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:38,368 [INFO]     [Red 12] P: Koji je glavni grad Srbije?
+2026-05-06 19:48:38,368 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:48:40,947 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:40,954 [INFO]     [Red 13] P: Koji grad je prestonica Republike Srbije?
+2026-05-06 19:48:40,955 [INFO]             O: Prestonica Republike Srbije je Beograd.
+2026-05-06 19:48:43,379 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:43,386 [INFO]     [Red 14] P: What is the capital city of Serbia?
+2026-05-06 19:48:43,386 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:48:45,886 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:45,894 [INFO]     [Red 15] P: Quelle est la capitale de la Serbie?
+2026-05-06 19:48:45,895 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:48:48,360 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:48,362 [INFO]     [Red 16] P: Koliko opština ima Beograd?
+2026-05-06 19:48:48,362 [INFO]             O: Beograd ima 17 opština.
+2026-05-06 19:48:50,906 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:50,907 [INFO]     [Red 17] P: Na koliko opština je podeljen grad Beograd?
+2026-05-06 19:48:50,907 [INFO]             O: Grad Beograd je podeljen na 17 opština.
+2026-05-06 19:48:53,715 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:53,723 [INFO]     [Red 18] P: Da li Beograd ima više ili manje od 15 opština?
+2026-05-06 19:48:53,723 [INFO]             O: Beograd ima više od 15 opština. Tačnije, ima ih 17.
+2026-05-06 19:48:56,392 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:56,396 [INFO]     [Red 19] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:48:56,397 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-06 19:48:59,026 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:48:59,029 [INFO]     [Red 20] P: Ko je komponovao operu 'Na uranku' ?
+2026-05-06 19:48:59,029 [INFO]             O: Operu "Na uranku" komponovao je Stanislav Binički.
+2026-05-06 19:49:01,595 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:49:01,598 [INFO]     [Red 21] P: Which Serbian composer is known for the opera 'Na uranku'?
+2026-05-06 19:49:01,599 [INFO]             O: Srpski kompozitor poznat po operi "Na uranku" je Stanislav Binički.
+2026-05-06 19:49:04,523 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:49:04,526 [INFO]     [Red 22] P: Kada je Stevan Mokranjac komponovao operu 'Na uranku'
+2026-05-06 19:49:04,527 [INFO]             O: Stevan Mokranjac nije komponovao operu "Na uranku". Možda mislite na operu "Na u...
+2026-05-06 19:49:07,497 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:49:07,499 [INFO]     [Red 23] P: Ko je predstavio zakon koji glasi ' Svaka akcija ima svoju r...
+2026-05-06 19:49:07,499 [INFO]             O: Zakon koji glasi "Svaka akcija ima svoju reakciju" je treći Njutnov zakon kretan...
+2026-05-06 19:49:10,160 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:49:10,168 [INFO]     [Red 24] P: Zakon ' Svaka akcija ima svoju reakciju' je otkrio koji fizi...
+2026-05-06 19:49:10,168 [INFO]             O: Zakon "Svaka akcija ima svoju reakciju" je deo trećeg Njutnovog zakona kretanja,...
+2026-05-06 19:49:13,044 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 19:49:13,045 [INFO]     [Red 25] P: Ko je predstavio 3 zakona klasične fizike.
+2026-05-06 19:49:13,045 [INFO]             O: Tri zakona klasične fizike, poznata kao Njutnovi zakoni kretanja, predstavio je ...
+2026-05-06 19:49:14,606 [INFO]   ✓ Gotovo: GPT-4o
+2026-05-06 19:49:14,607 [INFO] 
+  ▶ Model: Claude Sonnet
+2026-05-06 19:49:16,544 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:16,544 [INFO]     [Red 3] P: Kada je osnovan Univerzitet u Beogradu?
+2026-05-06 19:49:16,545 [INFO]             O: Univerzitet u Beogradu je osnovan **1905. godine**.
+
+To je najstariji i najveći ...
+2026-05-06 19:49:21,577 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:21,580 [INFO]     [Red 4] P: Koje godine je počeo sa radom Beogradski univerzitet?
+2026-05-06 19:49:21,580 [INFO]             O: Beogradski univerzitet je počeo sa radom **1905. godine**.
+
+Osnovan je kao Velik...
+2026-05-06 19:49:26,744 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:26,744 [INFO]     [Red 5] P: Da li je Univerzitet u Beogradu osnovan pre ili posle 1850. ...
+2026-05-06 19:49:26,745 [INFO]             O: Univerzitet u Beogradu je osnovan **posle 1850. godine**, tačnije **1905. godine...
+2026-05-06 19:49:31,744 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:31,746 [INFO]     [Red 6] P: What year was the University of Belgrade founded?
+2026-05-06 19:49:31,747 [INFO]             O: The University of Belgrade was founded in **1808** (as the Belgrade Higher Schoo...
+2026-05-06 19:49:36,924 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:36,926 [INFO]     [Red 7] P: Koliko godina postoji Univerzitet u Beogradu? (računaj od os...
+2026-05-06 19:49:36,927 [INFO]             O: Univerzitet u Beogradu je osnovan **1905. godine**, što znači da postoji **120 g...
+2026-05-06 19:49:41,286 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:41,287 [INFO]     [Red 8] P: Ko je napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:49:41,287 [INFO]             O: Roman "Na Drini ćuprija" napisao je **Ivo Andrić**, jugoslovenski i srpski knjiž...
+2026-05-06 19:49:46,163 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:46,164 [INFO]     [Red 9] P: Koji pisac je autor dela 'Na Drini ćuprija'?
+2026-05-06 19:49:46,164 [INFO]             O: Ivo Andrić je autor dela "Na Drini ćuprija". 
+
+Za ovaj roman je 1961. godine dob...
+2026-05-06 19:49:50,934 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:50,937 [INFO]     [Red 10] P: Da li je Meša Selimović napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:49:50,937 [INFO]             O: Ne, "Na Drini ćuprija" nije napisao Meša Selimović, već **Ivo Andrić**. 
+
+Meša S...
+2026-05-06 19:49:55,456 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:55,458 [INFO]     [Red 11] P: Who wrote the novel 'The Bridge on the Drina'?
+2026-05-06 19:49:55,459 [INFO]             O: Roman "Na Drini ćuprija" napisao je Ivo Andrić, jugoslovenski pisac koji je 1961...
+2026-05-06 19:49:59,228 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:49:59,229 [INFO]     [Red 12] P: Koji je glavni grad Srbije?
+2026-05-06 19:49:59,229 [INFO]             O: Glavni grad Srbije je **Beograd**.
+2026-05-06 19:50:02,788 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:02,788 [INFO]     [Red 13] P: Koji grad je prestonica Republike Srbije?
+2026-05-06 19:50:02,789 [INFO]             O: Beograd je prestonica Republike Srbije.
+2026-05-06 19:50:06,592 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:06,595 [INFO]     [Red 14] P: What is the capital city of Serbia?
+2026-05-06 19:50:06,595 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:50:10,713 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:10,716 [INFO]     [Red 15] P: Quelle est la capitale de la Serbie?
+2026-05-06 19:50:10,716 [INFO]             O: Glavni grad Srbije je **Beograd**.
+
+(Napomena: Pitanje je postavljeno na francus...
+2026-05-06 19:50:16,336 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:16,337 [INFO]     [Red 16] P: Koliko opština ima Beograd?
+2026-05-06 19:50:16,338 [INFO]             O: Beograd ima **17 opština**.
+
+To su: Stari grad, Vračar, Savski venac, Palilula, ...
+2026-05-06 19:50:21,665 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:21,666 [INFO]     [Red 17] P: Na koliko opština je podeljen grad Beograd?
+2026-05-06 19:50:21,667 [INFO]             O: Grad Beograd je podeljen na **17 gradskih opština**.
+2026-05-06 19:50:25,780 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:25,780 [INFO]     [Red 18] P: Da li Beograd ima više ili manje od 15 opština?
+2026-05-06 19:50:25,781 [INFO]             O: Beograd ima **više od 15 opština**. 
+
+Grad Beograd ima **17 gradskih opština**.
+2026-05-06 19:50:31,817 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:31,819 [INFO]     [Red 19] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:50:31,819 [INFO]             O: Opera "Na uranku" je delo **Stanislava Biničkog**, jednog od najznačajnijih srps...
+2026-05-06 19:50:37,513 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:37,516 [INFO]     [Red 20] P: Ko je komponovao operu 'Na uranku' ?
+2026-05-06 19:50:37,517 [INFO]             O: Operu "Na uranku" komponovao je **Stevan Hristić**, srpski kompozitor. Ovo je pr...
+2026-05-06 19:50:42,712 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:42,714 [INFO]     [Red 21] P: Which Serbian composer is known for the opera 'Na uranku'?
+2026-05-06 19:50:42,715 [INFO]             O: Stevan Hristić je srpski kompozitor poznat po operi "Na uranku" (1903). Ovo je j...
+2026-05-06 19:50:49,664 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:49,664 [INFO]     [Red 22] P: Kada je Stevan Mokranjac komponovao operu 'Na uranku'
+2026-05-06 19:50:49,665 [INFO]             O: Stevan Mokranjac nije komponovao operu "Na uranku". 
+
+Mokranjac (1856-1914) je b...
+2026-05-06 19:50:55,906 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:50:55,909 [INFO]     [Red 23] P: Ko je predstavio zakon koji glasi ' Svaka akcija ima svoju r...
+2026-05-06 19:50:55,911 [INFO]             O: To je **Isak Njutn** (Isaac Newton). Ovaj zakon je poznat kao **Njutnov treći za...
+2026-05-06 19:51:00,822 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:51:00,825 [INFO]     [Red 24] P: Zakon ' Svaka akcija ima svoju reakciju' je otkrio koji fizi...
+2026-05-06 19:51:00,826 [INFO]             O: Taj zakon je otkrio **Isak Njutn** (Isaac Newton). To je Njutnov treći zakon kre...
+2026-05-06 19:51:06,376 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-06 19:51:06,377 [INFO]     [Red 25] P: Ko je predstavio 3 zakona klasične fizike.
+2026-05-06 19:51:06,377 [INFO]             O: Tri zakona klasične fizike (zakoni kretanja) predstavio je **Isak Njutn** (Isaac...
+2026-05-06 19:51:07,940 [INFO]   ✓ Gotovo: Claude Sonnet
+2026-05-06 19:51:07,941 [INFO] 
+  ▶ Model: Mistral Large
+2026-05-06 19:51:08,578 [INFO]     [Red 3] P: Kada je osnovan Univerzitet u Beogradu?
+2026-05-06 19:51:08,578 [INFO]             O: Univerzitet u Beogradu osnovan je 1808. godine.
+2026-05-06 19:51:10,959 [INFO]     [Red 4] P: Koje godine je počeo sa radom Beogradski univerzitet?
+2026-05-06 19:51:10,960 [INFO]             O: Beogradski univerzitet je počeo sa radom 1808. godine, kada je osnovana Velika š...
+2026-05-06 19:51:13,369 [INFO]     [Red 5] P: Da li je Univerzitet u Beogradu osnovan pre ili posle 1850. ...
+2026-05-06 19:51:13,370 [INFO]             O: Univerzitet u Beogradu osnovan je **1808. godine** (kao Velika škola), što znači...
+2026-05-06 19:51:15,611 [INFO]     [Red 6] P: What year was the University of Belgrade founded?
+2026-05-06 19:51:15,611 [INFO]             O: Univerzitet u Beogradu je osnovan 1808. godine.
+2026-05-06 19:51:18,164 [INFO]     [Red 7] P: Koliko godina postoji Univerzitet u Beogradu? (računaj od os...
+2026-05-06 19:51:18,164 [INFO]             O: Univerzitet u Beogradu osnovan je 1808. godine. Dakle, postoji **216 godina** (r...
+2026-05-06 19:51:20,388 [INFO]     [Red 8] P: Ko je napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:51:20,388 [INFO]             O: Roman *Na Drini ćuprija* napisao je Ivo Andrić.
+2026-05-06 19:51:22,573 [INFO]     [Red 9] P: Koji pisac je autor dela 'Na Drini ćuprija'?
+2026-05-06 19:51:22,574 [INFO]             O: Autor dela "Na Drini ćuprija" je Ivo Andrić.
+2026-05-06 19:51:25,162 [INFO]     [Red 10] P: Da li je Meša Selimović napisao roman 'Na Drini ćuprija'?
+2026-05-06 19:51:25,163 [INFO]             O: Ne, roman "Na Drini ćuprija" napisao je Ivo Andrić, a ne Meša Selimović. Meša Se...
+2026-05-06 19:51:27,419 [INFO]     [Red 11] P: Who wrote the novel 'The Bridge on the Drina'?
+2026-05-06 19:51:27,419 [INFO]             O: Roman "Most na Drini" napisao je Ivo Andrić.
+2026-05-06 19:51:29,522 [INFO]     [Red 12] P: Koji je glavni grad Srbije?
+2026-05-06 19:51:29,523 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:51:31,659 [INFO]     [Red 13] P: Koji grad je prestonica Republike Srbije?
+2026-05-06 19:51:31,659 [INFO]             O: Prestonica Republike Srbije je Beograd.
+2026-05-06 19:51:33,830 [INFO]     [Red 14] P: What is the capital city of Serbia?
+2026-05-06 19:51:33,831 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:51:36,000 [INFO]     [Red 15] P: Quelle est la capitale de la Serbie?
+2026-05-06 19:51:36,000 [INFO]             O: Glavni grad Srbije je Beograd.
+2026-05-06 19:51:38,118 [INFO]     [Red 16] P: Koliko opština ima Beograd?
+2026-05-06 19:51:38,118 [INFO]             O: Beograd ima 17 opština.
+2026-05-06 19:51:40,307 [INFO]     [Red 17] P: Na koliko opština je podeljen grad Beograd?
+2026-05-06 19:51:40,307 [INFO]             O: Grad Beograd je podeljen na 17 opština.
+2026-05-06 19:51:42,437 [INFO]     [Red 18] P: Da li Beograd ima više ili manje od 15 opština?
+2026-05-06 19:51:42,437 [INFO]             O: Beograd ima **17 opština**.
+2026-05-06 19:51:44,713 [INFO]     [Red 19] P: Koji srpski kompozitor je poznat po operi 'Na uranku'?
+2026-05-06 19:51:44,714 [INFO]             O: Poznat srpski kompozitor po operi "Na uranku" je Stevan Mokranjac.
+2026-05-06 19:51:47,014 [INFO]     [Red 20] P: Ko je komponovao operu 'Na uranku' ?
+2026-05-06 19:51:47,014 [INFO]             O: Operu *Na uranku* komponovao je **Stevan Mokranjac**.
+2026-05-06 19:51:49,384 [INFO]     [Red 21] P: Which Serbian composer is known for the opera 'Na uranku'?
+2026-05-06 19:51:49,384 [INFO]             O: Stevan Hristić je srpski kompozitor poznat po operi "Na uranku".
+2026-05-06 19:51:52,423 [INFO]     [Red 22] P: Kada je Stevan Mokranjac komponovao operu 'Na uranku'
+2026-05-06 19:51:52,423 [INFO]             O: Nisam siguran. Operu "Na uranku" je komponovao Stevan Mokranjac, ali tačan datum...
+2026-05-06 19:51:56,350 [INFO]     [Red 23] P: Ko je predstavio zakon koji glasi ' Svaka akcija ima svoju r...
+2026-05-06 19:51:56,351 [INFO]             O: Zakon "Svaka akcija ima svoju reakciju" potiče iz **Njutnove treće zakona kretan...
+2026-05-06 19:51:58,817 [INFO]     [Red 24] P: Zakon ' Svaka akcija ima svoju reakciju' je otkrio koji fizi...
+2026-05-06 19:51:58,817 [INFO]             O: Zakon "Svaka akcija ima svoju reakciju" (poznatiji kao **treći Newtonov zakon kr...
+2026-05-06 19:52:01,368 [INFO]     [Red 25] P: Ko je predstavio 3 zakona klasične fizike.
+2026-05-06 19:52:01,369 [INFO]             O: Tri zakona klasične fizike (Newtonovi zakoni kretanja) predstavio je **Isaac New...
+2026-05-06 19:52:02,931 [INFO]   ✓ Gotovo: Mistral Large
+2026-05-06 19:52:02,989 [INFO] 
+✅ Svi rezultati sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 19:52:54,675 [INFO] Učitavam: dataset_evaluacija_llm.xlsx
+2026-05-06 19:52:54,700 [INFO] ── Zaglavlja sheetova (red 2) ──
+2026-05-06 19:52:54,701 [INFO]   [Tačnost] {1: 'ID', 2: 'Kategorija', 3: 'Pitanje', 4: 'Tačan odgovor', 5: 'Izvor', 6: 'Težina (1-3)', 7: 'Odg. GPT-4', 8: 'Odg. Claude', 9: 'Odg. Mistral', 10: 'Tačno? (DA/NE)', 11: 'Napomena', 12: 'Ocenjivač'}
+2026-05-06 19:52:54,701 [INFO]   [Halucinacije] {1: 'ID', 2: 'Tip zamke', 3: 'Pitanje', 4: 'Očekivano ponašanje', 5: 'Crvene zastavice', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Mistral', 9: 'Da li je halucinirao? (DA/NE)', 10: 'Opis halucinacije', 11: 'Stepen (1-3)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 19:52:54,701 [INFO]   [Konzistentnost] {1: 'Grupa ID', 2: 'Varijanta br.', 3: 'Tip formulacije', 4: 'Pitanje', 5: 'Tačan odgovor', 6: 'Odg. GPT-4', 7: 'Odg. Claude', 8: 'Odg. Mistral', 9: 'Konzistentno GPT? (DA/NE)', 10: 'Konzistentno Claude? (DA/NE)', 11: 'Konzistentno Mistral? (DA/NE)', 12: 'Napomena', 13: 'Ocenjivač'}
+2026-05-06 19:52:54,702 [INFO]   [Uputstvo] {}
+2026-05-06 19:52:54,702 [INFO] ────────────────────────────────
+2026-05-06 19:52:54,702 [INFO] Odgovori ce biti sacuvani u: dataset_evaluacija_llm_sa_odgovorima.xlsx
+2026-05-06 19:52:54,702 [INFO] 
+════════════════════════════════════════════════════════════
+2026-05-06 19:52:54,703 [INFO] Sheet: Tačnost — 100 pitanja
+2026-05-06 19:52:54,703 [INFO] ════════════════════════════════════════════════════════════
+2026-05-06 19:52:54,703 [INFO] 
+  ▶ Model: GPT-4o
