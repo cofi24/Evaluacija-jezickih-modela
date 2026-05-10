@@ -33,7 +33,7 @@ IZLAZNI_FOLDER = "chartovi"  # folder gde se čuvaju slike
 # Nazivi modela i boje
 MODELI = {
     "Odg. Mistral": {"naziv": "Mistral Small",  "boja": "#FF7043"},
-    "Odg. GPT-4":  {"naziv": "GPT-4",         "boja": "#10A37F"},
+    "Odg. GPT-4":   {"naziv": "GPT-4",           "boja": "#10A37F"},
     "Odg. Claude":  {"naziv": "Claude Sonnet",  "boja": "#CC785C"},
 }
 
@@ -43,14 +43,14 @@ MODELI = {
 # Kolone za ocenu tacnosti (DA/NE) po modelu
 TACNOST_KOLONE = {
     "Mistral Small": "Tačno_Mistral (DA/NE)",
-    "GPT-4":        "Tačno_GPT (DA/NE)",
+    "GPT-4":         "Tačno_GPT (DA/NE)",
     "Claude Sonnet": "Tačno_Claude (DA/NE)",
 }
 
 # Kolone za ocenu halucinacija (DA/NE) po modelu
 HALUCINACIJE_KOLONE = {
     "Mistral Small": "Da li je halucinirao Mistral? (DA/NE)",
-    "GPT-4":        "Da li je halucinirao GPT? (DA/NE)",
+    "GPT-4":         "Da li je halucinirao GPT? (DA/NE)",
     "Claude Sonnet": "Da li je halucinirao Claude? (DA/NE)",
 }
 
@@ -162,46 +162,26 @@ def izracunaj_halucinacije(df: pd.DataFrame, kolone_modela: dict) -> dict:
     return hal_stopa
 
 
+# Kolone za konzistentnost (DA/NE) po modelu
+KONZISTENTNOST_KOLONE = {
+    "Mistral Small": "Konzistentno Mistral? (DA/NE)",
+    "GPT-4":         "Konzistentno GPT? (DA/NE)",
+    "Claude Sonnet": "Konzistentno Claude? (DA/NE)",
+}
+
 def izracunaj_konzistentnost(df: pd.DataFrame, kolone_modela: dict) -> dict:
-    """Računa konzistentnost po grupama pitanja."""
+    """Racuna konzistentnost na osnovu specificnih DA/NE kolona po modelu."""
     konzistentnost = {}
-
-    grupa_col = None
-    for c in df.columns:
-        if "grupa" in str(c).lower() or "group" in str(c).lower():
-            grupa_col = c
-            break
-
     for naziv, col in kolone_modela.items():
-        if col not in df.columns:
-            continue
-
-        konz_col = None
-        for c in df.columns:
-            if "konzist" in str(c).lower() and naziv.split()[0].lower() in str(c).lower():
-                konz_col = c
-                break
-
-        if konz_col and konz_col in df.columns:
-            ocene = df[konz_col].dropna().astype(str).str.upper()
+        da_ne_col = KONZISTENTNOST_KOLONE.get(naziv)
+        if da_ne_col and da_ne_col in df.columns:
+            ocene = df[da_ne_col].dropna().astype(str).str.strip().str.upper()
+            if ocene.empty:
+                continue
             stopa = (ocene == "DA").sum() / len(ocene) * 100
         else:
-            if grupa_col and grupa_col in df.columns:
-                grupe = df.groupby(df[grupa_col])[col]
-                konzistentnih = 0
-                ukupno = 0
-                for _, grupa in grupe:
-                    odg = grupa.dropna().astype(str).tolist()
-                    if len(odg) > 1:
-                        ukupno += 1
-                        if len(set(odg)) == 1:
-                            konzistentnih += 1
-                stopa = (konzistentnih / ukupno * 100) if ukupno > 0 else 0.0
-            else:
-                stopa = 0.0
-
+            stopa = 0.0
         konzistentnost[naziv] = round(stopa, 1)
-
     return konzistentnost
 
 
@@ -499,7 +479,13 @@ def main():
 
     print(f"\n✅ Sve gotovo! Chartovi su u folderu: ./{IZLAZNI_FOLDER}/")
     print("   Možeš ih direktno ubaciti u diplomski rad.")
-
+    print("\n--- DEBUG ---")
+    print("Tačnost:", tacnost)
+    print("Halucinacije:", halucinacije)
+    print("Konzistentnost:", konzistentnost)
+    print("-------------")
 
 if __name__ == "__main__":
+    
     main()
+    
