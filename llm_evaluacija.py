@@ -26,7 +26,7 @@ MISTRAL_API_KEY   = os.getenv("MISTRAL_API_KEY")
 
 # ─── Podešavanja ─────────────────────────────────────────────────────────────
 EXCEL_FAJL     = "dataset_evaluacija_llm.xlsx"   # ← tvoj Excel fajl
-DELAY_SEKUNDI  = 1.5   # pauza između poziva (da ne prekorači rate limit)
+DELAY_SEKUNDI  = 0.5   # pauza između poziva (da ne prekorači rate limit)
 TEMPERATURA    = 0     # 0 = deterministic, bitno za konzistentnost
 MAX_TOKENA     = 500   # maksimalna dužina odgovora
 
