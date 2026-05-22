@@ -268,43 +268,76 @@ def chart_radar(sve_metrike: dict, naziv_fajla: str):
 
 
 def chart_heatmapa_kategorija(df_tacnost: pd.DataFrame,
-                               kolone_modela: dict, naziv_fajla: str):
-    """Heatmapa tačnosti po kategorijama."""
+                               kolone_modela: dict,
+                               naziv_fajla: str):
+    """Heatmapa tačnosti po kategorijama koristeći DA/NE kolone."""
+
     kat_col = None
     for c in df_tacnost.columns:
         if "kateg" in str(c).lower():
             kat_col = c
             break
 
-    if not kat_col or not kolone_modela:
-        print("  ⚠️  Nema kategorija za heatmapu.")
+    if not kat_col:
+        print("⚠️ Nema kolone za kategorije.")
         return
 
-    # Napravi matricu: kategorija × model
     matrica = {}
-    for naziv, col in kolone_modela.items():
-        if col not in df_tacnost.columns:
+
+    for naziv in kolone_modela.keys():
+
+        # Uzmi odgovarajuću DA/NE kolonu
+        da_ne_col = TACNOST_KOLONE.get(naziv)
+
+        if not da_ne_col or da_ne_col not in df_tacnost.columns:
             continue
-        grupe = df_tacnost.groupby(kat_col)[col].apply(
-            lambda x: (~x.dropna().astype(str).str.startswith("GREŠKA")).mean() * 100
+
+        grupe = df_tacnost.groupby(kat_col)[da_ne_col].apply(
+            lambda x: (
+                x.dropna()
+                 .astype(str)
+                 .str.strip()
+                 .str.upper()
+                 .eq("DA")
+                 .mean() * 100
+            )
         )
-        matrica[naziv] = grupe
+
+        matrica[naziv] = grupe.round(1)
 
     if not matrica:
+        print("⚠️ Nema podataka za heatmapu.")
         return
 
     df_mat = pd.DataFrame(matrica).fillna(0)
 
-    fig, ax = plt.subplots(figsize=(max(6, len(matrica) * 2), max(4, len(df_mat) * 0.7)))
-    sns.heatmap(df_mat, ax=ax, annot=True, fmt=".0f", cmap="YlOrRd",
-                linewidths=0.5, linecolor=BOJA_POZADINE,
-                cbar_kws={"label": "Tačnost (%)"})
+    fig, ax = plt.subplots(
+        figsize=(max(7, len(matrica) * 2.2),
+                 max(4, len(df_mat) * 0.8))
+    )
+
+    sns.heatmap(
+        df_mat,
+        ax=ax,
+        annot=True,
+        fmt=".1f",
+        cmap="YlOrRd",
+        vmin=0,
+        vmax=100,
+        linewidths=0.5,
+        linecolor=BOJA_POZADINE,
+        cbar_kws={"label": "Tačnost (%)"}
+    )
+
     ax.set_title("Tačnost po kategorijama pitanja", pad=14)
     ax.set_xlabel("")
     ax.set_ylabel("")
-    plt.xticks(rotation=20, ha="right")
+
+    plt.xticks(rotation=15, ha="right")
     plt.yticks(rotation=0)
+
     fig.tight_layout()
+
     sacuvaj(fig, naziv_fajla)
 
 
